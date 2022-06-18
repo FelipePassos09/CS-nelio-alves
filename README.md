@@ -234,10 +234,7 @@ Podemos ilustrar da seguinte forma:
 <p>É um tipo geral para texto e caracteres unicode, para ser declarada é necessário colocar os caracteres dentro de aspas duplas. Diferente do char, a string pode receber qualquer cadeia de caracteres. O tipo String não é, exatamente, um tpo primitivo. No caso da string, ela uma vez declarada se torna imutável, não podendo ser alterada por outros métodos no decorrer da execução.</p>
 <h4>Object</h4>
 <p>É o tipo de objeto genérico, é aplicada á qualquer objeto, inclusive classes. Sendo ele um tipo genérico ele pode assumir qualquer valor passad à ele, porém é importante observar seu uso pois pode gerar erros e bugs de execução ou tornar o código pesado ou inseguro.</p>
-<<<<<<< HEAD
-</p>
-=======
 </p>
 <h2>Próxima Aula</h2>
 <p></p>
->>>>>>> 2da6083 (Commit)
+
