@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4972554c-d2f0-47f9-a5b2-6e5485c75078" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Testes/C#.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/bin/Debug/net6.0/C#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/bin/Debug/net6.0/C#.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/bin/Debug/net6.0/C#.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/bin/Debug/net6.0/C#.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/bin/Debug/net6.0/C#.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/bin/Debug/net6.0/ref/C#.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/calc.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/C#.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/C#.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/C#.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/C#.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/apphost" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/Debug/net6.0/ref/C#.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Testes/obj/project.nuget.cache" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2AizUgKw47Sj3K0Uod59aBlH3Q7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4972554c-d2f0-47f9-a5b2-6e5485c75078" name="Changes" comment="" />
+      <created>1655507213145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655507213145</updated>
+      <workItem from="1655507217993" duration="49000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

@@ -1,0 +1,15 @@
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.csproj.AssemblyReference.cache
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.GeneratedMSBuildEditorConfig.editorconfig
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.AssemblyInfoInputs.cache
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.AssemblyInfo.cs
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.csproj.CoreCompileInputs.cache
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/bin/Debug/net6.0/Course
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/bin/Debug/net6.0/Course.deps.json
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/bin/Debug/net6.0/Course.runtimeconfig.json
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/bin/Debug/net6.0/Course.dll
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/bin/Debug/net6.0/Course.pdb
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.dll
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/refint/Course.dll
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.pdb
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.genruntimeconfig.cache
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/ref/Course.dll

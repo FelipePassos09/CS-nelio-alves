@@ -1,0 +1,15 @@
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/bin/Debug/net6.0/PrimeiroProjeto
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/bin/Debug/net6.0/PrimeiroProjeto.deps.json
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/bin/Debug/net6.0/PrimeiroProjeto.runtimeconfig.json
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/bin/Debug/net6.0/PrimeiroProjeto.dll
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/bin/Debug/net6.0/PrimeiroProjeto.pdb
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/obj/Debug/net6.0/PrimeiroProjeto.csproj.AssemblyReference.cache
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/obj/Debug/net6.0/PrimeiroProjeto.GeneratedMSBuildEditorConfig.editorconfig
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/obj/Debug/net6.0/PrimeiroProjeto.AssemblyInfoInputs.cache
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/obj/Debug/net6.0/PrimeiroProjeto.AssemblyInfo.cs
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/obj/Debug/net6.0/PrimeiroProjeto.csproj.CoreCompileInputs.cache
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/obj/Debug/net6.0/PrimeiroProjeto.dll
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/obj/Debug/net6.0/refint/PrimeiroProjeto.dll
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/obj/Debug/net6.0/PrimeiroProjeto.pdb
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/obj/Debug/net6.0/PrimeiroProjeto.genruntimeconfig.cache
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/PrimeiroProjeto/PrimeiroProjeto/obj/Debug/net6.0/ref/PrimeiroProjeto.dll
