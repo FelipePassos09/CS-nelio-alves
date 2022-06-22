@@ -4,7 +4,7 @@ namespace Course
 {
     class Program
     {
-        private static void Main(string[] args)
+        private static void Aula(string[] args)
         {
             SByte x = 127;
             int y = 1000;
@@ -16,7 +16,7 @@ namespace Course
             Console.WriteLine(x);
             Console.WriteLine(y);
             Console.WriteLine(z);
-            Console.WriteLine(beta);
+            Console.WriteLine(delta);
         }
     }
 }

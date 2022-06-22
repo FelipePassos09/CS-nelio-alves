@@ -9,7 +9,7 @@
 /run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/bin/Debug/net6.0/Course.dll
 /run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/bin/Debug/net6.0/Course.pdb
 /run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.dll
-/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/refint/Course.dll
 /run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.pdb
 /run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/Course.genruntimeconfig.cache
 /run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/Debug/net6.0/ref/Course.dll
+/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/bin/Debug/net6.0/ref/Course.dll

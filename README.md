@@ -235,6 +235,76 @@ Podemos ilustrar da seguinte forma:
 <h4>Object</h4>
 <p>É o tipo de objeto genérico, é aplicada á qualquer objeto, inclusive classes. Sendo ele um tipo genérico ele pode assumir qualquer valor passad à ele, porém é importante observar seu uso pois pode gerar erros e bugs de execução ou tornar o código pesado ou inseguro.</p>
 </p>
-<h2>Próxima Aula</h2>
-<p></p>
+<h2>Declaração de Variáveis - Convenções</h2>
+<p>
+    <li>Não utilize nomes começando com números.
+        <ul>Sempre inicie a variável usando uma letra ou um _(underline).</ul>
+    </li>
+    <li>Use camelCase.
+        <ul>Utilize camelcase sempre que a variável possuir duas palavras.</ul>
+    </li>
+    <li>Não utilize espaços.
+        <ul>Sempre que a variavel for composta insira uma palavra seguida da outra juntas.</ul>
+    </li>
+    <li>Evite a acentuação.
+        <ul>Não utilize acentos, til, cedilha, etc, ao declarar variáveis, sempre insira apenas letras simples.</ul>
+    </li>
+    <li>Utilize nomes que possuam significado.
+        <ul>Evite usar nomes genéricos ou pouco descritivos para declarar variáveis, desse modo a interpretação do código será mais simples.</ul>
+    </li>
 
+<h3>Convenções Camelcase</h3>
+<p>Quando estamos desenvolvendo um software, principalmente quando estivermos desenvolvendo em POO (Programação Orientada a Objetos) é convencionado o uso de camelCase, no caso onde há a mescla entre letras maiúsculas e minúsculas no nome das variáveis. Nesse caso, em C# temos três formatos principais:
+    <li>Camel Case
+        <ul>Primeira palavra da viariável em letra minuscula, segunda palavra iniciando em letra maiúscula (ultimoNome). É utilizada geralmente para nomear métodos ou variáveis dentro de um método.</ul>
+    </li>
+    <li>Pascal Case
+        <ul>Primeira e segunda palavras da variável começando com letra maiúscula (UltimoNome). Usada para namespaces, classes, properties e métodos.</ul>
+    </li>
+    <li>Padrão
+        <ul>Mesma estrutura de Camel Case, porém iniciada sempre com underline (_ultimoNome). Usada em atributor internos da classe.</ul>
+    </li>
+<h3>Exemplo:</h3>
+<textarea rows="19" cols="50">
+    namespace Curso
+    {
+        class ContaBancaria
+        {
+            public string Titular { get; set; }
+            private double _saldo;
+            '
+            public void Deposito(double quantia)
+            {
+                _saldo += quantia;
+            }
+            '
+            public double GetSaldo()
+            {
+                return _saldo;
+            }
+        }
+    }
+</textarea>
+</p>
+<h2>Saída de Dados - Console</h2>
+<p>
+    Usamos as instruções do módulo Console: writeLine & write.
+    <h3>writeLine</h3>
+    <p>A entrada writeLine irá retornar o dado adicionando uma quebra de linha ao final.</p>
+    <h3>write</h3>
+    <p>Ira imprimir na tela o valor sem nenhuma quebra.</p>
+Podemos utilizar formatação para algumas saídas com o módulo .ToString, passando como argumento um parâmetro de formatação como no caso de ou double, usando "F2" para imprmir dois decimais, ou mesmo, adicionando um outro namespace, formatar caracteres separadores a partir do FormatProvider, contido no namespace System.Globalization. Neste caso, após inserirmos o namespace podemos adicionar o parâmetro CultureInfo.InvariantCulture no .ToString para ignorar as regras de formatação.
+
+<h3>Textos Compostos</h3>
+<h4>Placeholders</h4>
+<p>A partir de uma estrutura de coordenadas, podemos passar variáveis para serem impressas. Desse modo abrimos a string e, na posição onde cada variável será impressa, passamos uma coordenada numérica entre chaves, por fim, passamos as variáveis que serão impressas.</p>
+<h4>Interpolação</h4>
+<p>De modo semelhante ao que ocorre com os Placeholders, podemos passar as variáveis diretamente dentro das chaves, para isso basta iniciar a declaração por cifrão '$'.</p>
+<h4>Concatenação</h4>
+<p>Para este método usamos o operador '+' para indicar a inclusão os argumentos na string. Com a concatenação podemos, da mesma forma, mesclar variáveis e string estática.</p>
+<h4>Formatando Saídas Concatenadas</h4>
+<p>Quando dentro de uma string formatada usamos ':' e os parâmetros que definirão o formato da variável. Importante frisar que o padrão de separação de decimais é utilizando vírgula, nesse caso, caso queiramos alterar essa saída para vírgula é necessário utilizar o .ToString junto à variável.</p>
+<h3>Exercício</h3>
+<p>Em um programa inicie as variáevis contendo Computador, Mesa de Ecritório, uma idade qualquer, um código qualquer, um gênero, dois preços e uma medida (com mais de 4 decimais). Em seguida, usando os valores produza saidas contendo um preço pra computador, um preço para Mesa de Escritório, um registro de cliente com código, idade e sexo e, por fim, três formatos de saída para a medida, um sem alteração, um com menos casas decimais e um formatado com separador '.'.</p>
+
+</p>
