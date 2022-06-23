@@ -4,7 +4,7 @@ using System.Globalization;
 namespace Course;
 class NewBaseType
 {
-    private static void Main(string[] args)
+    private static void exercicio1(string[] args)
     {
         //double saldo = 10.35784;
 

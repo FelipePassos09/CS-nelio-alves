@@ -113,12 +113,12 @@ Podemos ilustrar da seguinte forma:
 <h2>Tipos Básicos C#</h2>
 <p>
     <table style = "border: 1px solid">
-        <tr style="font-weight: bold; font-size: 20px; text-align: center">
-            <td style="color: darkgrey; font-weight:bold;">C# Type</td>
-            <td style="color: darkgrey; font-weight:bold;">.Net Framework Type</td>
-            <td style="color: darkgrey; font-weight:bold;">Signed</td>
-            <td style="color: darkgrey; font-weight:bold;">Bytes</td>
-            <td style="color: darkgrey; font-weight:bold;">Possible Values</td>
+        <tr style="font-weight: bold; font-size: 20px; text-align: center;color: darkgrey; font-weight:bold;">
+            <td>C# Type</td>
+            <td>.Net Framework Type</td>
+            <td>Signed</td>
+            <td>Bytes</td>
+            <td>Possible Values</td>
         </tr>
         <tr>
             <td style="color: purple; font-weight:bold; font-size:16px">sbyte</td>
@@ -306,5 +306,68 @@ Podemos utilizar formatação para algumas saídas com o módulo .ToString, pass
 <p>Quando dentro de uma string formatada usamos ':' e os parâmetros que definirão o formato da variável. Importante frisar que o padrão de separação de decimais é utilizando vírgula, nesse caso, caso queiramos alterar essa saída para vírgula é necessário utilizar o .ToString junto à variável.</p>
 <h3>Exercício</h3>
 <p>Em um programa inicie as variáevis contendo Computador, Mesa de Ecritório, uma idade qualquer, um código qualquer, um gênero, dois preços e uma medida (com mais de 4 decimais). Em seguida, usando os valores produza saidas contendo um preço pra computador, um preço para Mesa de Escritório, um registro de cliente com código, idade e sexo e, por fim, três formatos de saída para a medida, um sem alteração, um com menos casas decimais e um formatado com separador '.'.</p>
-
+</p>
+<h2>Operadores de Atribuição</h2>
+<p>
+    <li>=
+        <ul>Representa "Recebe" e é usado para atribuir valores à variáevis, entre outros.</ul>
+    </li>
+    <li>+=
+        <ul>Representa uma atribuição incremental, ou seja, reatribui o valor da váriavel como o valor dela mais o valor passado como incremento. Pode ser usado tanto com números quanto com strings, no caso de string ele concatena o valor da string com o que foi passado como argumento.</ul>
+    </li>
+    <li>-=
+        <ul>Funciona como o anterior, porém na forma de decremento, ou seja, decrementa o valor a partir do que foi passado como argumento porém não opera com strings, apenas com números.</ul>
+    </li>
+    <li>++ / --
+        <ul>Estes dois operadores irão funcionar, respectivamente, como incremento e decremento, porém apenas com uma unidade. Uma característica interessante desse operador é que, quando inserido depois da variável, em uma atribuição de valores, o valor da variável original é incrementado, porém a variável que reecbeu o valor não sofre incremento, quando passamos ele antes da variável, ambas recebem o valor incrementado.</ul>
+    </li>
+</p>
+<h2>Conversão Implicita e Casting</h2>
+<p>A conversão implicita ocorre quando passamos uma variável como atribuiçaõ de outra, de tipo diferente, mas que é compatível com a variável de destino. O Casting, ao contrário do anterior, é utilizado para atribuições de valores não compatíveis, nesse caso é necessaŕio passar o tipo do valor destino, entre parenteses, na declaração de atribuição.
+<br />
+Um detalhe importante é que, se fizermos operações com inteiros e queiramos o resultado como double, além de a variável que irá receber esse calculo ser do tipo double, precisamos passar o casting no dividendo pois, dessa maneira, o retorno será double também, do contrário o retorno será um inteiro truncado.
+</p>
+<h2>Operadores Aritiméticos Básicos</h2>
+<p>
+    <table style="border-collapse: collapse; border: 1px solid;">
+        <tr style="font-weight: bold; font-size: 20px; text-align: center;color: purple; font-weight:bold;">
+            <td>Operador</td>
+            <td>Significado</td>
+            <td>Descrição</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-size: 20px; text-align: center;color: darkgrey; font-weight:bold;">+</td>
+            <td>Adição</td>
+            <td>Representa a soma de dois valores ou concatenação caso um ou ambos sejam string.</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-size: 20px; text-align: center;color: darkgrey; font-weight:bold;">-</td>
+            <td>Subtração</td>
+            <td>Representa a diferença entre dois valores numéricos.</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-size: 20px; text-align: center;color: darkgrey; font-weight:bold;">*</td>
+            <td>Multiplicação</td>
+            <td>Representa o produto entre dois valores.</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-size: 20px; text-align: center;color: darkgrey; font-weight:bold;">/</td>
+            <td>Divisão</td>
+            <td>Representa o coeficiente de dois valores.</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; font-size: 20px; text-align: center;color: darkgrey; font-weight:bold;">%</td>
+            <td>Resto da Divisão</td>
+            <td>Retorna o resto caso a divisão não seja exata (se exata retorna 0)</td>
+        </tr>
+    </table>
+    As precedências seguem iguais as da aritimética convencional, onde * e / são operadas antes de + e -. Para alterar o comportamento deve-se prestar atenção à organização de expressões ordenadas.
+</p>
+<h2>Entrada de Dados</h2>
+<p>Para realizarmos a entrada de dados a partir do teclado utilizamos a isntrução <a style="color: purple; font-weight:bold;">Console.ReadLine</a>. Esta instrução, quando inserida, permite a leitura de um valor, desde a entrada padrão até o pressionamento do próximo enter. Importante ressaltar que o valor será lido, sempre, como string.</p>
+<h2>Desmembrando Strings</h2>
+<p>A partir de uma string podemos criar um vetor contendo os valores da string separados a partir do método .Split() e, como parâmetro, passamos o caractér ou conjunto de caracteres que serão usados para separar a string. Dessa forma o nosso vetor receberá os itens separados da string.</p>
+<h2>Continuação - Entrada de Dados</h2>
+<p>
+    Conforme dito acima, a finção ReadLine sempre retornará uma string, portanto, para podermos lidar com números inseridos via teclado precisaremos usar a função de Parse, dessa maneira a entrada, quando identificada como número será convertida para o tipo inteiro, mas atenção, se o valor passado não for numérico, ou seja, uma string, um erro será lançado.
 </p>
