@@ -369,5 +369,51 @@ Um detalhe importante é que, se fizermos operações com inteiros e queiramos o
 <p>A partir de uma string podemos criar um vetor contendo os valores da string separados a partir do método .Split() e, como parâmetro, passamos o caractér ou conjunto de caracteres que serão usados para separar a string. Dessa forma o nosso vetor receberá os itens separados da string.</p>
 <h2>Continuação - Entrada de Dados</h2>
 <p>
-    Conforme dito acima, a finção ReadLine sempre retornará uma string, portanto, para podermos lidar com números inseridos via teclado precisaremos usar a função de Parse, dessa maneira a entrada, quando identificada como número será convertida para o tipo inteiro, mas atenção, se o valor passado não for numérico, ou seja, uma string, um erro será lançado.
+    Conforme dito acima, a função ReadLine sempre retornará uma string, portanto, para podermos lidar com outro tipos inseridos via teclado precisaremos usar a função de Parse, dessa maneira a entrada, quando identificada como número será convertida para o tipo inteiro, mas atenção, se o valor passado não for numérico, ou seja, uma string, um erro será lançado.
+    <h3>.Parse()</h3>
+    <p>A função .Parse é, na verdade, um módulo voltado à conversão de valores de string para outros tipos, nesse caso precisamos passar em primeiro lugar o tipo que queremos após a conversão, em seguida o módulo .Parse() e como parâmetro do parse a variável ou o próprio ReadLine.</p>
+    <h3>Localização</h3>
+    <p>Um ponto importante é lembrarmos que o .NET sempre levará em consideração a localização do computador com o qual está interagindo, nesse caso, quando passarmos um double, caso a máquina esteja em PT-br, por exemplo, não podemos usar o ponto como separador decimal, apenas a vírgula. Para contornarmos isso precisamos usar o módulo InvariantCulture para alterar o comportamento do separador (de vírgula para ponto).</p>
+</p>
+<h2>Exercício Proposto</h2>
+<p>
+    Faça um programa que realize a seguinte interação com o usuário, lendo valores na tela e mostrando as saídas corretamente formatadas:
+    <br />
+    <text style="color: purple;">Entre com seu nome completo:<br />Quantos quartos tem a sua casa:<br />Entre com o preço de um produto:<br />Entre seu último nome, idade e altura na mesma linha (separado por espaços):</text>
+
+</p>
+<h2>Operadores Comparativos</h2>
+<p>
+    Os operadores comparativos são usados para realizar análises e operações que retornam um bool, ou seja, retornam true ou false. Nesse caso temos os seguintes operadores:
+    <ul>
+        <li>>, <
+            <ul>Significam "maior que" e "menor que", respectivamente. São utilizados quando queremos comparar dois valores e retornar se um é, realmente, maior ou menor que outro.</ul>
+        </li>
+        <li>>= , <=
+            <ul>Significam "maior ou igual a" e "menor ou igual a" respectivamente. Usamos quando queremos analisar valores que podem ser iguais ou maiores/menores que o parâmetro passado.</ul>
+        </li>
+        <li>== , !=
+            <ul>Significam "igual a" e "diferente de", respectivamente. São usados quando queremos comparar se um valor é igual ou diferente do parâmetro passado.</ul>
+        </li>
+    </ul>
+</p>
+<h2>Operadores Lógicos</h2>
+<p>
+    Assim como os comparativos, os operadores lógicos são usados quando estamos trabalhando com comparações. Nesse caso os operadores lógicos são empregados para podermos usar mais de uma condição ou negarmos alguma condição:
+    <ul>
+        <li>&&
+            <ul>É usado para representar o 'E', ou seja, quando queremos adicionar mais condições à nossa comparação quem devem ser atendidas. No caso do 'E' uma comparação será verdadeira se somente todas as condições forem atendidas.</ul>
+        </li>
+    </ul>
+    <ul>
+        <li>||
+            <ul>É usado para representar o 'OU', ou seja, quando queremos adicionar mais condições à nossa comparação, porém nem todas precisam ser atendidas. No caso do 'OU', basta uma das condições ser atendidas que o retorno será verdadeiro, somente será falso se todas forem falsas.</ul>
+        </li>
+    </ul>
+    <ul>
+        <li>!
+            <ul>É usado para representar o 'NÃO', ou seja, para negar uma condição. O 'NÃO' é empregado para negar, ou seja, para inverter uma condição passada.</ul>
+        </li>
+    </ul>
+    <p>A precedência entre os operadores é !(Não) > && (E) > || (Ou).</p>
 </p>
