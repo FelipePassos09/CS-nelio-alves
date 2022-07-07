@@ -417,3 +417,91 @@ Um detalhe importante é que, se fizermos operações com inteiros e queiramos o
     </ul>
     <p>A precedência entre os operadores é !(Não) > && (E) > || (Ou).</p>
 </p>
+<h2>Estruturas Condicionais</h2>
+<p>
+    <h3>Estrutura Simplificada</h3>
+    <p>Usando a instrução if apenas para checar uma condição e executá-la se atendida.
+    <textarea rows = 4 cols = 25>
+    if ( condição ){
+        comando 1
+        comando 2
+    }
+    </textarea>
+    </p>
+    <h3>Estrutura Completa</h3>
+    <p>Usando a instrução if para checar uma condição e executando uma instrução diferente com else caso ela não seja atendida. Cria dois possiveis caminhos para a execução.<br />
+    <textarea rows = 8>
+    if ( condição ) {
+        comando 1
+        comando 2
+    }
+    else {
+        comando 1
+        comando2
+    }
+    </textarea>
+    </p>
+    <h3>Estrutura Composta</h3>
+    <p>Usando a instrução if para checar uma condição ou else if para checar outras condições possiveis, cada uma criando um desvio ou novo resultado e, por fim, else para executar uma instrução caso nenhuma anterior tenha sido atendida.<br />
+    <textarea rows=15 cols = 30>
+        if ( condição ) {
+            comando 1
+            comando 2
+        }
+        else if ( condição ) {
+            comando 1
+            comando 2
+        }
+        else if ( condição ) {
+            comando 1
+            comando 2
+        }
+        else {
+            comando 1
+            comando 2
+        }
+    </textarea>    
+    </p>
+</p>
+<h2>Variáveis e Escopo de Inicialização</h2>
+<p>Assim como nas demais linguagens, é essencial termos noção do escopo no qual iremos utilizar nossas variáveis</p>
+<h2>Funções</h2>
+<p>Representam um processamento que possuem um significado, ou seja, sempre executam a mesma ação e são reutilizáveis em essência. Além disso elas permitem a modularização do seu programa, o reaproveitamento e o encapsulamento. Além disso as funções podem receber dados de entrada e também possuir uma saída. No paradigma de orientação à objetos as funções,  quando em classes, são tratadas por 'métodos'.</p>
+<p>Dentro do C#, no paradigma de orientação à objetos, a classe é composta por diversas funções, inclusive o entrypoint também é uma função. Para podemos declarar outras funções dentro de uma classe precisamos, fora do nosso 'Main", criar um novo método contendo o mesmo tipo de entrada (static) e passar o tipo de saída da função no lugar do void, em seguida inserimos, entre parentesis, as entradas que a função terá, definindo também o tipo e a variáevl que será utilizada pela função para referenciar este valor. É importante destacar que, assim como em outros momentos, o escopo das variáveis deve ser respeitado, ou seja, mesmo que passemos o mesmo nome de variável na função, essas serão novas variáveis pertencentes apenas à função definida. Assim como em outras linguagens, aqui podemos tanto ter uma saída em forma de valores a partir da instrução 'return'.</p>
+No exemplo abaixo vemos uma função que realiza a soma entre dois números.<br />
+<textarea cols="45" rows="10">
+class Exemplo{
+    public static void Main(string[] args){
+        int num1;
+        int num2;
+        Console.WriteLine(Soma(num1, num2));
+    }
+    static int Soma(int var1, int var2){
+        return var1 + var2;
+    }
+}
+</textarea>
+<h2>Debugging com Visual Code</h2>
+<p>Para podermos realizar um degging utilizamos break-points para apontar pontos de parada na execução do nosso código, dessa maneira podemos controlar onde iremos pausar a execução do nosso programa para acompanharmos as ações. No ponto de parada ele irá começar a fazer o processamento passo a passo de acordo com as instruções abaixo:
+<li>F5 - Inicia o debug.</li>
+<li>F9 - Marca/desmarca o breakpoint na linha onde estiver o cursor.</li>
+<li>F10 - Avança o debug para a próxima linha dentro do escopo local.</li>
+<li>F11 - Avança o debug para o proximo passo, mesmo que saia do escopo local e entre em um módulo diferente.</li>
+<li>Shift + F5 - Para o debug</li>
+<li>Shift + F11 - Sai do método em execução e retorna para o escopo principal.</li>
+
+<h3>Abas do Debugging</h3>
+<p>
+<li>Local - Mostra todas as variáveis e ações do escopo local.</li>
+<li>Autos - Mostra as variáveis dos valores entendidos como relevantes pela IDE.</li>
+</p>
+</p>
+<h2>Estruturas de Repetição</h2>
+<p>
+    <h3>While (enquanto)</h3>
+    <p>Na estrutra enquanto executamos um loop baseado em uma condição lógica que, se atendida, para o loop e segue a execução do restante do código.</p>
+    <h3>Do → While (faça + enquanto)</h3>
+    <p>Diferente do while, a instrução do executa o loop mesmo que a condição ainda não tenha sido atendida, parando apenas quando ela for atendida, garantindo a execução de, pelo menos, uma repetição.</p>
+    <h3>For each (para cada)</h3>
+    <p>A instrução 'for each' executa um loop baseado em uma lista ou série, nesse caso repetindo a execução tantas vezes quanto houverem valores na lista, ou série, apontada.</p>
+</p>

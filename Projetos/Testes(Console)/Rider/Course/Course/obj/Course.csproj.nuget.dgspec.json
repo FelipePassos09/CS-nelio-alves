@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/Course.csproj": {}
+    "S:\\Documents\\Cursos\\C#\\Projetos\\Testes(Console)\\Rider\\Course\\Course\\Course.csproj": {}
   },
   "projects": {
-    "/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/Course.csproj": {
+    "S:\\Documents\\Cursos\\C#\\Projetos\\Testes(Console)\\Rider\\Course\\Course\\Course.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/Course.csproj",
+        "projectUniqueName": "S:\\Documents\\Cursos\\C#\\Projetos\\Testes(Console)\\Rider\\Course\\Course\\Course.csproj",
         "projectName": "Course",
-        "projectPath": "/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/Course.csproj",
-        "packagesPath": "/home/felipe/.nuget/packages/",
-        "outputPath": "/run/media/felipe/Storage/Documents/Cursos/C#/Projetos/Testes(Console)/Rider/Course/Course/obj/",
+        "projectPath": "S:\\Documents\\Cursos\\C#\\Projetos\\Testes(Console)\\Rider\\Course\\Course\\Course.csproj",
+        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
+        "outputPath": "S:\\Documents\\Cursos\\C#\\Projetos\\Testes(Console)\\Rider\\Course\\Course\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/felipe/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/opt/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
