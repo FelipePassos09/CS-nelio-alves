@@ -502,6 +502,8 @@ class Exemplo{
     <p>Na estrutra enquanto executamos um loop baseado em uma condição lógica que, se atendida, para o loop e segue a execução do restante do código.</p>
     <h3>Do → While (faça + enquanto)</h3>
     <p>Diferente do while, a instrução do executa o loop mesmo que a condição ainda não tenha sido atendida, parando apenas quando ela for atendida, garantindo a execução de, pelo menos, uma repetição.</p>
+    <h3>For (para)</h3>
+    <p>de forma semelhante ao While, a instrução for define uma repetição do conteúdo de seu escopo, porém tal repetição é controlada a partir de uma condição previamente estabelecida, ou seja, aqui controlamos quantas vezes iremos repetir a instrução, diferente do que ocorre com o While.</p>
     <h3>For each (para cada)</h3>
     <p>A instrução 'for each' executa um loop baseado em uma lista ou série, nesse caso repetindo a execução tantas vezes quanto houverem valores na lista, ou série, apontada.</p>
 </p>

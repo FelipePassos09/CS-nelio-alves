@@ -4,7 +4,7 @@ namespace Calculadora
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.Write("Insira seu nome:");
             var nome = Console.ReadLine();
@@ -23,6 +23,7 @@ namespace Calculadora
                     "\n5 = Potenciação" +
                     "\n6 = Raiz" +
                     "\n7 = Resto da divisão" +
+                    "\n8 = Fatorial" +
                     "\nOu digite 99 para sair.");
                 option = int.Parse(Console.ReadLine());
 
@@ -60,34 +61,40 @@ namespace Calculadora
 
                         Console.WriteLine($"O o resto da divisão é: {Pot(n1, exp)}");
                     }
+                    else if(option == 8){
+                        Console.Write("Informe o número:   ");
+                        exp = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                        Console.WriteLine($"O fatorial de {exp} é {Fat(exp)}");
+                    }
                 }
             }
         }
-        static double Soma(double n1, double n2)
+        private static double Soma(double n1, double n2)
         {
             return n1 + n2;
         }
 
-        static double Subtracao(double n1, double n2)
+        private static double Subtracao(double n1, double n2)
         {
             return n1 - n2;
         }
 
-        static double Multi(double n1, double n2)
+        private static double Multi(double n1, double n2)
         {
             return n1 * n2;
         }
 
-        static double Div(double n1, double n2)
+        private static double Div(double n1, double n2)
         {
             return n1 / n2;
         }
 
-        static int Resto(double n1, double n2)
+        private static int Resto(double n1, double n2)
         {
             return (int) (n1 % n2);
         }
-        static double Pot(double n1, int n2)
+        private static double Pot(double n1, int n2)
         {
             int count = 1;
             double result = 1;
@@ -99,6 +106,16 @@ namespace Calculadora
             }
 
             return result;
+        }
+        private static double Fat(int n1)
+        {
+            int n2 = n1;
+
+            for (int i = 1; i < n2; i++)
+            {
+                n1 *= i;
+            }
+            return n1;
         }
     }
 }

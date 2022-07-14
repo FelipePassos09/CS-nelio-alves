@@ -4,7 +4,7 @@ namespace Course
 {
     class Exercicio6
     {
-        public static void Main(string[] args)
+        public static void Exec6(string[] args)
         {
             System.Console.WriteLine("Digite tr~es números: ");
 
