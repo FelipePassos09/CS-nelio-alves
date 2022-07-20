@@ -25,7 +25,9 @@ namespace Calculadora
                     "\n7 = Resto da divisão" +
                     "\n8 = Fatorial" +
                     "\nOu digite 99 para sair.");
-                option = int.Parse(Console.ReadLine());
+
+                option = int.Parse(s: Console.ReadLine());
+
 
                 if (option == 99)
                 {
@@ -40,7 +42,54 @@ namespace Calculadora
                         Console.Write("Informe o segundo número:   ");
                         n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-                        Console.WriteLine($"O resultado da Soma é: {Soma(n1, n2)}");
+                        Console.WriteLine($"A soma entre {n1} e {n2} é: {Soma(n1, n2)}.\n\n");
+                    }
+                    else if (option == 2) 
+                    {
+                        Console.Write("Informe o primeiro número:   ");
+                        n1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        Console.Write("Informe o segundo número:   ");
+                        n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                        Console.WriteLine($"A diferença entre {n1} e {n2} é: {Subtracao(n1, n2)}.\n\n");
+                    }
+                    else if (option == 3)
+                    {
+                        Console.Write("Informe o primeiro número:   ");
+                        n1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        Console.Write("Informe o segundo número:   ");
+                        n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                        Console.WriteLine($"O produto entre {n1} e {n2} é: {Multi(n1, n2)}.\n\n");
+                    }
+                    else if (option == 4)
+                    {
+                        Console.Write("Informe o primeiro número:   ");
+                        n1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        Console.Write("Informe o segundo número:   ");
+                        n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                        Console.WriteLine($"O coeficiente entre {n1} e {n2} é: {Div(n1, n2)}.\n\n");
+                    }
+                    else if (option == 5)
+                    {
+                        Console.Write("Informe o primeiro número:   ");
+                        n1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        Console.WriteLine("ATENÇÃO!!!\nEste número precisa ser inteiro!");
+                        Console.Write("Informe o expoente:   ");
+                        exp = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                        Console.WriteLine($"{n1} elevado à {exp}: {Pot(n1, exp)}");
+                    }
+                    else if (option == 6)
+                    {
+                        Console.Write("Informe o primeiro número:   ");
+                        n1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        Console.WriteLine("ATENÇÃO!!!\nEste número precisa ser inteiro!");
+                        Console.Write("Informe o expoente:   ");
+                        exp = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                        Console.WriteLine($"A raiz {exp} de {n1}: {Raiz(n1, exp)}");
                     }
                     else if (option == 7)
                     {
@@ -50,18 +99,9 @@ namespace Calculadora
                         n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
                         Console.WriteLine($"O o resto da divisão é: {Resto(n1, n2)}");
-                    }
-                    else if(option == 5)
+                    }                   
+                    else if (option == 8)
                     {
-                        Console.Write("Informe o primeiro número:   ");
-                        n1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                        Console.WriteLine("ATENÇÃO!!!\nEste número precisa ser inteiro!");
-                        Console.Write("Informe o expoente:   ");
-                        exp = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-                        Console.WriteLine($"O o resto da divisão é: {Pot(n1, exp)}");
-                    }
-                    else if(option == 8){
                         Console.Write("Informe o número:   ");
                         exp = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
@@ -106,6 +146,11 @@ namespace Calculadora
             }
 
             return result;
+        }
+        private static double Raiz(double n1, int n2)
+        {
+            double radicando = 1 / n2;
+            return Math.Pow(n1, radicando);
         }
         private static double Fat(int n1)
         {

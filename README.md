@@ -507,3 +507,19 @@ class Exemplo{
     <h3>For each (para cada)</h3>
     <p>A instrução 'for each' executa um loop baseado em uma lista ou série, nesse caso repetindo a execução tantas vezes quanto houverem valores na lista, ou série, apontada.</p>
 </p>
+<h1>Orientação à Objetos</h1>
+<h2>Criando uma Classe</h2>
+<p>Para criarmos uma classe precisamos, inicialmente, criar um arquivo de classe (.cs) e nele indicar as dependências, o namespace onde a classe estará alocada, o nome da classe, os atributos e o(s) métodos(s).</p>
+<h2>Atributos</h2>
+<p>Em resumo os atributos consistem nas características da nossa classe, eles quem irão definir o objeto invocado. É muito importante, então, termos bem estabelecidos atributos que serão utilizados.</p>
+<h2>Métodos</h2>
+<p>São as diversas aplicaçoões associadas a esta classe, no caso, ao criarmos uma nova classe, podemos indicar ações que ela pode efetuar a partir dos objetos criados como, por exemplo, uma operação matemática, uma saída em tela, um novo bloco de ações e etc. Uma maneira simples de definir um métod é que ele é uma função pertencente à classe onde está incluso.</p>
+<h3>Características dos métodos</h3>
+<li>Nome do Método - Consiste no nome do método que será usado para invocá-lo.</li>
+<li>Parâmetros do Método - Consiste nos valores ou condições que precisam ser passadas no método para ser corretamente executado.</li>
+<li>Corpo do Método - É o conteúdo do método, as instruções ou ações que ele irá executar e retornar quando invocado.</li>
+<li>Tipo de saída - É o tipo de dado que será retornado do método.</li>
+<h2>Prefixo Public</h2>
+<p>O prefixo public é o indicativo que o atributo, classe ou método poderão ser acessados por outros arquivos dentro do namespace. Nesse caso, ao definirmos um dado como public, em todos os locais do namespace referenciado poderemos acessar esta classe e invocar seus métodos public.</p>
+<h2>Static Members</h2>
+<p></p>
