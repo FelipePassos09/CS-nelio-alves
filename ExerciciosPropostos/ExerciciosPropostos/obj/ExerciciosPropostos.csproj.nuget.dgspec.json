@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Documents\\Cursos\\C#\\ExerciciosPropostos\\ExerciciosPropostos\\ExerciciosPropostos.csproj": {}
+    "/run/media/felipe/Storage/Cursos/CS-nelio-alves/ExerciciosPropostos/ExerciciosPropostos/ExerciciosPropostos.csproj": {}
   },
   "projects": {
-    "S:\\Documents\\Cursos\\C#\\ExerciciosPropostos\\ExerciciosPropostos\\ExerciciosPropostos.csproj": {
+    "/run/media/felipe/Storage/Cursos/CS-nelio-alves/ExerciciosPropostos/ExerciciosPropostos/ExerciciosPropostos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Documents\\Cursos\\C#\\ExerciciosPropostos\\ExerciciosPropostos\\ExerciciosPropostos.csproj",
+        "projectUniqueName": "/run/media/felipe/Storage/Cursos/CS-nelio-alves/ExerciciosPropostos/ExerciciosPropostos/ExerciciosPropostos.csproj",
         "projectName": "ExerciciosPropostos",
-        "projectPath": "S:\\Documents\\Cursos\\C#\\ExerciciosPropostos\\ExerciciosPropostos\\ExerciciosPropostos.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "S:\\Documents\\Cursos\\C#\\ExerciciosPropostos\\ExerciciosPropostos\\obj\\",
+        "projectPath": "/run/media/felipe/Storage/Cursos/CS-nelio-alves/ExerciciosPropostos/ExerciciosPropostos/ExerciciosPropostos.csproj",
+        "packagesPath": "/home/felipe/.nuget/packages/",
+        "outputPath": "/run/media/felipe/Storage/Cursos/CS-nelio-alves/ExerciciosPropostos/ExerciciosPropostos/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/felipe/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -523,3 +523,5 @@ class Exemplo{
 <p>O prefixo public é o indicativo que o atributo, classe ou método poderão ser acessados por outros arquivos dentro do namespace. Nesse caso, ao definirmos um dado como public, em todos os locais do namespace referenciado poderemos acessar esta classe e invocar seus métodos public.</p>
 <h2>Static Members</h2>
 <p></p>
+<h2>Object and ToString</h2>
+<p>Ao criarmos uma classe podemos definir, de maneira direta, qual a saída esperada caso o objeto instanciado seja chamado por alguma função. Para tanto podemos utilizar a função ToString, com sobrecarga, na classe criada, dessa maneira, ao chamarmos o objeto ele retornará uma string formatada tal qual configurarmos dentro da nossa classe. Isso é muito importante caso utilizarmos a classe para uma finalidade de registro ou mesmo de referenciação, por exemplo se nosso programa retornar em tela alguma característica da classe que precisemos. Outras aplicações dete método são caso queiramos criar um texto a partir da classe sem que para isso, façamos um método dedicado.</p>
