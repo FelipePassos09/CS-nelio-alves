@@ -8,7 +8,7 @@ namespace ExerciciosPropostos
     {
         static void Main(string[] args)
         {
-            int option;
+            /*int option;
             Triangulo x, y;
 
             x = new Triangulo
@@ -59,10 +59,42 @@ namespace ExerciciosPropostos
             Console.WriteLine("Agora precisamos remover alguns itens:");
             qte = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             p.rmvProducts(qte);
-            Console.WriteLine($"Agora que removemos {qte} temos {p.Quantity} {p.Name}");
+            Console.WriteLine($"Agora que removemos {qte} temos {p.Quantity} {p.Name}");*/
 
+            /*a = new Produto("TV", 1200.00, 1);
+            Console.WriteLine(a);*/
+
+            /*a = new Produto()
+            {
+                Name = "Geladeira",
+                Price = 273.00,
+                Quant = 2
+            };
+            Console.WriteLine(a);
+            int quant = 2;
+            a.AddProducts(quant);
+            Console.WriteLine(a);
+
+            b = new Produto()
+            {
+                Name = "Fogão",
+                Price = 1200.00,
+                Quant = 1
+            };
+            Console.WriteLine(b);
+            quant = 3;
+            b.AddProducts(quant);
+            Console.WriteLine(b);*/
+
+            Console.WriteLine("Informe o nome do produto:");
+            string prod = Console.ReadLine();
+            Console.WriteLine("Informe o preço a pagar: ");
+            double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Quantos produtos busca comprar? ");
+            int qtd = int.Parse(Console.ReadLine());
+
+            Produto a = new Produto(prod, price, qtd);
+            Console.WriteLine(a);
         }
-
-        
     }
 }
