@@ -527,3 +527,21 @@ class Exemplo{
 <p>Ao criarmos uma classe podemos definir, de maneira direta, qual a saída esperada caso o objeto instanciado seja chamado por alguma função. Para tanto podemos utilizar a função ToString, com sobrecarga, na classe criada, dessa maneira, ao chamarmos o objeto ele retornará uma string formatada tal qual configurarmos dentro da nossa classe. Isso é muito importante caso utilizarmos a classe para uma finalidade de registro ou mesmo de referenciação, por exemplo se nosso programa retornar em tela alguma característica da classe que precisemos. Outras aplicações dete método são caso queiramos criar um texto a partir da classe sem que para isso, façamos um método dedicado.</p>
 <h2>Construtores</h2>
 <p>Construtores são operações especiais de classe que executam no moneto da instanciação do objeto. São comumente usados para atribuição de valores específicos ou também permitir e/ou obrigar o uso de dependências no momento da instanciação.<br />Se não houver um construtor customizado a classe disponibiliza um construtor padrão (new). Além disso ainda á possivel especificar mais de um construtor na mesma classe a partir do uso de sobrecarga.</p>
+<h2>Sobrecarga</h2>
+<p>Em C# podemos definir a sobrecarga como um comportamento alternativo de um mesmo método ou atributo, ou seja, com ela podemos ter métodos de nomes iguais porém que se comportam de maneiras diferentes a depender dos atributos que são passados na chamada do método ou construtor. A sobrecarga é o principal elemento que define a caracterítica de polimorfismo da orientação à objetos.</p>
+<h2>Alternativas à Inicialização de Valores</h2>
+<p>Para instanciarmos um novo objetos podemos (e é recomendado) utilizar uma sintaxe alternativa à declaração de valores caracterizada pelo uso de chaves que recebem os atributos da classe de modo direto</p>
+<h2>Palavra 'this'</h2>
+<p>Em resumo, o 'this' é usado quando precisamos referenciar o próprio objeto instânciado dentro da classe, análogo ao 'self' em Python. Há diversos usos para a palavra reservada 'this', dentre eles os principais são:
+    <li>Diferenciar atributos de variáveis locais.</li>
+    <li>Referenciar outro construtor em um construtor.</li>
+    <li>Passar o próprio objeto como argumento na chamada de um método ou construtor.</li>
+</p>
+<h2>Encapsulamento</h2>
+<p>Consiste de uma característica onde escondemos os detalhes de uma implementação de modo a manter a acessíveis apenas informações seguras, desta forma mantendo o sistema consistente. O encapsulamento é feito utilizando-se dos métodos Get e Set, além do uso de 'private' em lugar de 'public'. O private garante que o método ou atributo não seja acessível diretamente de outro arquivo, ou seja, os valores e métodos não possam ser alterados diretamente. Por convenção, diferente dos atributos public, os atributos private são nomeados utilizando o "underline" no começo do nome e a primeira letra minúscula.</p>
+<h2>Métodos Get & Set</h2>
+<p>Consistem de meios para que os valores dos atributos de uma classe não possam ser alterados de modo implicito, ou seja, uma vez definidos os atributos private, caso queiramos alterá-los ou retorná-los, usamos os métodos Get(para retornar o valor de algum atributo) e Set (para alterar algum atributo). Dessa maneira podemos estabelecer meios de controle para o que, e como, algum método ou atributo podem ser acessados.</p>
+<h2>Properties</h2>
+<p>Consistem de métodos alternativos para o Get e Set onde, a partir de um método, podemos tanto definir o retorno de uma informação quanto quais dados serão aceitos para que seja alterada. Nas properties usamos as palavras reservadas 'get' e 'set' como parâmetros de retorno e entrada de dados, sendo, neste caso, funções internas do método. Além destes utilizamos a key 'value' como parâmetro de entrada do dado. Da mesma maneira que nos métodos Get e Set, caso não queiramos que um atributo seja alterado basta não implementar uma propertie com 'set', apenas 'get', dessa maneira poderemos retornar um valor sem, no entanto, podermos alterar este valor.</p>
+<h3>Auto-Properties</h3>
+<p>São uma alternativa mais simples e prática do uso das properties, neste caso consistem de uma maneira para definirmos de forma direta o get-set diretamente no atributo onde a própria sintaxe atribui os retornos do get e do set.</p>

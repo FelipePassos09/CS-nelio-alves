@@ -95,6 +95,15 @@ namespace ExerciciosPropostos
 
             Produto a = new Produto(prod, price, qtd);
             Console.WriteLine(a);
+
+            Produto b = new Produto(prod, price);
+            Console.WriteLine(b);
+
+            Console.WriteLine(b.Name);
+            Console.WriteLine("Insira um novo nome para o produto: ");
+            b.Name = Console.ReadLine();
+            Console.WriteLine(b.Name);
+            
         }
     }
 }

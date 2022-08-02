@@ -7,4 +7,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="NewSoluction\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="NewSoluction\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="NewSoluction\**" />
+  </ItemGroup>
+
 </Project>
