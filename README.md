@@ -545,3 +545,96 @@ class Exemplo{
 <p>Consistem de métodos alternativos para o Get e Set onde, a partir de um método, podemos tanto definir o retorno de uma informação quanto quais dados serão aceitos para que seja alterada. Nas properties usamos as palavras reservadas 'get' e 'set' como parâmetros de retorno e entrada de dados, sendo, neste caso, funções internas do método. Além destes utilizamos a key 'value' como parâmetro de entrada do dado. Da mesma maneira que nos métodos Get e Set, caso não queiramos que um atributo seja alterado basta não implementar uma propertie com 'set', apenas 'get', dessa maneira poderemos retornar um valor sem, no entanto, podermos alterar este valor.</p>
 <h3>Auto-Properties</h3>
 <p>São uma alternativa mais simples e prática do uso das properties, neste caso consistem de uma maneira para definirmos de forma direta o get-set diretamente no atributo onde a própria sintaxe atribui os retornos do get e do set.</p>
+<h2>Ordem Sugerida para implementação de membros</h2>
+<p>
+    <li>Atributos privados</li>
+    <li>Propriedades autoimplementadas</li>
+    <li>Construtores</li>
+    <li>Propriedades customizadas</li>
+    <li>Demais métodos da classe</li>
+</p>
+<h2>Modificadores de Acesso</h2>
+<p>
+Modificadores de acesso consistem de configurações nos métodos e atributos para limitar o acesso aos mesmos, neste caso podemos entender que são parâmetros inerentes à estes componentes que, de acordo com suas condições, permitem o acesso aos dados a partir de outros elementos do programa.
+    <h3>Public</h3>
+    <p>Trata-se do mais permissivo dos modificadores, permitindo o acesso incondicional e irrestrito por qualquer elemento do projeto.</p>
+    <h3>Protected Internal</h3>
+    <p>Permite o acesso para qualquer classe ou subclasse contanto que, sendo classe, esteja no mesmo projeto.</p>
+    <h3>Internal</h3>
+    <p>Permite o acesso para qualquer classe ou subclasse no mesmo projeto.</p>
+    <h3>Protected</h3>
+    <p>Permite o acesso apenas para para subclasses.</p>
+    <h3>Private Protected</h3>
+    <p>Permite o acesso apenas para subclasses do mesmo projeto.</p>
+    <h3>Private</h3>
+    <p>Permite o acesso apenas dentro da própria classe.</p>
+    <table>
+        <tr>
+            <td style="font-weight: bold; color: purple;"></td>
+            <td style="text-align: center;font-weight: bold; color: purple;">própria classe</td>
+            <td style="text-align: center;font-weight: bold; color: purple;">subclasses no assembly</td>
+            <td style="text-align: center;font-weight: bold; color: purple;">classes do assembly</td>
+            <td style="text-align: center;font-weight: bold; color: purple;">subclasses fora do  assembly</td>
+            <td style="text-align: center;font-weight: bold; color: purple;">classes fora do assembly</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; color: purple;">public</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; color: purple;">protected internal</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; color: purple;">internal</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; color: purple;">protected</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; color: purple;">private protected</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; color: purple;">private</td>
+            <td style="text-align: center;">X</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;"></td>
+        </tr>
+    </table>
+</p>
+<h2>Modificadores de Acesso em Classes</h2>
+<p>Para as classes temos também alguns modificadores, são eles:
+    <h3>Public</h3>
+    <p>Assim como nos membros, o acesso public permite o acesso incondicional à classe.</p>
+    <h3>Internal</h3>
+    <p>Assim como nos membros, este modificador permite apenas o acesso por classes dentro do mesmo assembly. Além disto, quando nenhum modificador é atribído à classe de forma explicita, o modificador internal é considerado como default (de modo implícito)</p>
+    <h3>Private</h3>
+    <p>Seguindo, o último modificador de classe é o private que define o acesso apenas a partir da classe mãe, ou seja, somente classes aninhadas são permitidas como private</p>
+</p>
+<h2>Exercício Proposto</h2>
+<p>Criar um programa que crie uma conta bancária com número da conta, nome completo, condição se haverá ou não um primeiro depósito e, se positivo, um valor de depósito. Em seguida o programa irá solicitar um valor para depósito, então, será solicitado a realização de um saque (o saque terá uma taxa de $5,00).<br /><br />EM todas as ações os dados da conta e o valor na conta serão exibidos.</p>
