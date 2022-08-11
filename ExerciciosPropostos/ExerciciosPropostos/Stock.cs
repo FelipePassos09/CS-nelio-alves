@@ -10,6 +10,9 @@ public class Stock
     private string Marca { get; }
 
     public Stock()
+    {
+        
+    }
     
     public int Quantidade
     {

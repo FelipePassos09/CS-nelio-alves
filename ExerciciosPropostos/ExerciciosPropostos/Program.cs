@@ -86,7 +86,7 @@ namespace ExerciciosPropostos
             b.AddProducts(quant);
             Console.WriteLine(b);*/
 
-            Console.WriteLine("Informe o nome do produto:");
+            /*Console.WriteLine("Informe o nome do produto:");
             string prod = Console.ReadLine();
             Console.WriteLine("Informe o preço a pagar: ");
             double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -102,8 +102,28 @@ namespace ExerciciosPropostos
             Console.WriteLine(b.Name);
             Console.WriteLine("Insira um novo nome para o produto: ");
             b.Name = Console.ReadLine();
-            Console.WriteLine(b.Name);
-            
+            Console.WriteLine(b.Name);*/
+
+            int n = int.Parse(Console.ReadLine());
+            Product[] vet = new Product[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                string name = Console.ReadLine();
+                double price = double.Parse(Console.ReadLine());
+
+                vet[i] = new Product { Name = name, Price = price};
+            }
+
+            double tot = 0.00;
+
+            for (int i = 0; i < n; i++)
+            {
+                tot += vet[i].Price;
+            }
+
+            double avg = tot / vet.Length;
+            Console.WriteLine($"A média de preços é {avg.ToString("F2", CultureInfo.InvariantCulture)}");
         }
     }
 }

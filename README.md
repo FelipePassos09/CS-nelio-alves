@@ -638,3 +638,35 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
 </p>
 <h2>Exercício Proposto</h2>
 <p>Criar um programa que crie uma conta bancária com número da conta, nome completo, condição se haverá ou não um primeiro depósito e, se positivo, um valor de depósito. Em seguida o programa irá solicitar um valor para depósito, então, será solicitado a realização de um saque (o saque terá uma taxa de $5,00).<br /><br />EM todas as ações os dados da conta e o valor na conta serão exibidos.</p>
+<h1>Pnteiros</h1>
+<p>Ao instanciarmos um objeto temos duas áreas criadas na memória da máquina, a Stack e Heap.</p>
+<h3>Stack</h3>
+<p>A stack pode ser tratada como uma referência à um espaço de memória que receberá os dados do objeto.</p>
+<h3>Heap</h3>
+<p>O Heap é o espaço na memória que receberá os dados da do objeto instanciado.</p>
+<h2>Desalocação de Memória</h2>
+<p>Quando estamos trabalhando com um código, temos todas as nossa variáveis e obejtos. Nesse caso todos estes elementos são alocados em memória. A desalocação da memória funciona para "limpar" da memória os dados alocados que não serão mais necessários no decorrer do programa.
+<h3>Desalocação por Garbage Collector</h3>
+<p>Nessa circunstância há a limpeza dos dados alocados sempre que um heap perde referencia com algum objeto ou variável. Nesse caso, sempre que temos algum valor que é referênciado por um ponteiro ou referência direta, assim que ele perde essa referência, seja por alteração do ponteiro ou da Stack onde o mesmo é referenciado o Garbage Collector realiza o despejo dessa alocação o mais breve possível.</p>
+<h3>Desalocação por Escopo</h3>
+<p>Ocorre quando o objeto ou variável está contida em algum escopo e este deixa de ser utilizado, nesse caso, assim que o programa sai do escopo que contém estes valores alocados o espaço respectivo na memória é desalocado imediatamente.</p>
+</p>
+<h2>Nullable</h2>
+<p>Trata-se de um recurso onde o dado pode receber um valor nulo. Isso se faz necessário posis tipos valor são obrigatórios possuirem valor, para tanto podemos definir que variáevis destes tipos podem ser nulas através da instrução nullable, ou do operador '?' após o tipo da variável.
+<h3>.HasValue</h3>
+<p>O módulo irá retornar um boolean de acordo com a variável referênciada, retornará true caso o valor seja nulo ou false caso a variáevel contenha valor.</p>
+<h3>.GetValueOrDefault</h3>
+<p>Este módulo retorna o valor da variável ou um valor default para o tipo da variável em questão.</p>
+<h3>.Value</h3>
+<p>Por fim, o value retornará o valor da variável, porém se a variável for nula ele lançara uma exception informando que a variável é nula.</p>
+</p>
+<h2>Operador de Coalescência Nula [??]</h2>
+<p>O operador de coalescência nula é usado para passar valores quando a variável indicada for nula. No caso ele faz uma análise rápida e aplica uma condição para que, se a varável for nula, ele aplique um valor (do mesmo tipo) indicado em seu lugar.</p>
+<h1>Vetores</h1>
+<p>Tratam-se de arranjos lineares, sequenciados, e que possuem elementos de mesmo tipo, também da-se o nome de 'array'. ALém dessas características um vetor possui estrutura ordenada, ou seja, cada elemento possui sua devida posição dentro do arranjo, além disso eles são alocados em um bloco único, contíguo, de memória. Uma desvantagem é que um array não possui possibilidade de incremento, ou seja, sempre será realocado integralmente em memória caso haja uma inclusão ou deleção de valor, outra desvantagem é a dificuldade de realizar alterações em um arranjo como este visto serem operações mais pesadas. Suas vantagens, no entanto, incluem a facilidade de se trafegar pelos valores, visto serem ordenados, e o fato de ele ser um bloco único de meória os dados ficam encapsulados dentro do arranjo, facilitando a localização deles dentro do programa.</p>
+<h2>Manipulação de vetor <i>struct</i></h2>
+<p>Para manipularmos um vetor do tipo struct basta indicar após o tipo que será um vetor usando abre e fecha colchetes e, como valor, passarmos um <i>new tipo</i> com a quantidade de posições dentro de colchetes. Apos isso incluímos novos valores informando em qual posição o valor será incrementado. </p>
+<h2>Manipulação de vetor <i>classe</i></h2>
+<p>Para criarmos um vetor do tipo classe usamos a mesma estratégia de uma struct, porém passando a classe ao invés do tipo. Nesse caso serão alocadas novas classes dentro deste vetor sendo cada posição um objeto diferente. Desse modo cada posição receberá todos os atributos do objeto individualmente, alocando os objetos separados. Para chamarmos um valor do objeto basta passarmos o vetor e posição mais o atributo desejado.</p>
+<h2>Exercício Proposto - Apartamentos</h2>
+<p>Um proprietário possui 10 apartamentos, sendo eles numerados de 0 a 9.<br /><br />Será necessário fazer um programa em que todos os quartos iniciem vazios e e cadaste os inquilinos com nome, e-mail, valor do aluguel e número do quarto. Depois de finalizado o cadastro o programa retorne um relatório com os dados de alugueis de todos os quartos ordenados por seu número.</p>
