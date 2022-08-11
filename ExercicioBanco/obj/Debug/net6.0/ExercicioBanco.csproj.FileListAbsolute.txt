@@ -1,0 +1,15 @@
+S:\Courses\CS-nelio-alves\ExercicioBanco\bin\Debug\net6.0\ExercicioBanco.exe
+S:\Courses\CS-nelio-alves\ExercicioBanco\bin\Debug\net6.0\ExercicioBanco.deps.json
+S:\Courses\CS-nelio-alves\ExercicioBanco\bin\Debug\net6.0\ExercicioBanco.runtimeconfig.json
+S:\Courses\CS-nelio-alves\ExercicioBanco\bin\Debug\net6.0\ExercicioBanco.dll
+S:\Courses\CS-nelio-alves\ExercicioBanco\bin\Debug\net6.0\ExercicioBanco.pdb
+S:\Courses\CS-nelio-alves\ExercicioBanco\obj\Debug\net6.0\ExercicioBanco.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExercicioBanco\obj\Debug\net6.0\ExercicioBanco.GeneratedMSBuildEditorConfig.editorconfig
+S:\Courses\CS-nelio-alves\ExercicioBanco\obj\Debug\net6.0\ExercicioBanco.AssemblyInfoInputs.cache
+S:\Courses\CS-nelio-alves\ExercicioBanco\obj\Debug\net6.0\ExercicioBanco.AssemblyInfo.cs
+S:\Courses\CS-nelio-alves\ExercicioBanco\obj\Debug\net6.0\ExercicioBanco.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExercicioBanco\obj\Debug\net6.0\ExercicioBanco.dll
+S:\Courses\CS-nelio-alves\ExercicioBanco\obj\Debug\net6.0\refint\ExercicioBanco.dll
+S:\Courses\CS-nelio-alves\ExercicioBanco\obj\Debug\net6.0\ExercicioBanco.pdb
+S:\Courses\CS-nelio-alves\ExercicioBanco\obj\Debug\net6.0\ExercicioBanco.genruntimeconfig.cache
+S:\Courses\CS-nelio-alves\ExercicioBanco\obj\Debug\net6.0\ref\ExercicioBanco.dll
