@@ -1,0 +1,15 @@
+S:\Courses\CS-nelio-alves\ExercicioAptos\obj\Debug\net6.0\ExercicioAptos.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExercicioAptos\obj\Debug\net6.0\ExercicioAptos.GeneratedMSBuildEditorConfig.editorconfig
+S:\Courses\CS-nelio-alves\ExercicioAptos\obj\Debug\net6.0\ExercicioAptos.AssemblyInfoInputs.cache
+S:\Courses\CS-nelio-alves\ExercicioAptos\obj\Debug\net6.0\ExercicioAptos.AssemblyInfo.cs
+S:\Courses\CS-nelio-alves\ExercicioAptos\obj\Debug\net6.0\ExercicioAptos.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExercicioAptos\bin\Debug\net6.0\ExercicioAptos.exe
+S:\Courses\CS-nelio-alves\ExercicioAptos\bin\Debug\net6.0\ExercicioAptos.deps.json
+S:\Courses\CS-nelio-alves\ExercicioAptos\bin\Debug\net6.0\ExercicioAptos.runtimeconfig.json
+S:\Courses\CS-nelio-alves\ExercicioAptos\bin\Debug\net6.0\ExercicioAptos.dll
+S:\Courses\CS-nelio-alves\ExercicioAptos\bin\Debug\net6.0\ExercicioAptos.pdb
+S:\Courses\CS-nelio-alves\ExercicioAptos\obj\Debug\net6.0\ExercicioAptos.dll
+S:\Courses\CS-nelio-alves\ExercicioAptos\obj\Debug\net6.0\refint\ExercicioAptos.dll
+S:\Courses\CS-nelio-alves\ExercicioAptos\obj\Debug\net6.0\ExercicioAptos.pdb
+S:\Courses\CS-nelio-alves\ExercicioAptos\obj\Debug\net6.0\ExercicioAptos.genruntimeconfig.cache
+S:\Courses\CS-nelio-alves\ExercicioAptos\obj\Debug\net6.0\ref\ExercicioAptos.dll
