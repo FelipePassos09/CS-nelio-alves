@@ -670,3 +670,55 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
 <p>Para criarmos um vetor do tipo classe usamos a mesma estratégia de uma struct, porém passando a classe ao invés do tipo. Nesse caso serão alocadas novas classes dentro deste vetor sendo cada posição um objeto diferente. Desse modo cada posição receberá todos os atributos do objeto individualmente, alocando os objetos separados. Para chamarmos um valor do objeto basta passarmos o vetor e posição mais o atributo desejado.</p>
 <h2>Exercício Proposto - Apartamentos</h2>
 <p>Um proprietário possui 10 apartamentos, sendo eles numerados de 0 a 9.<br /><br />Será necessário fazer um programa em que todos os quartos iniciem vazios e e cadaste os inquilinos com nome, e-mail, valor do aluguel e número do quarto. Depois de finalizado o cadastro o programa retorne um relatório com os dados de alugueis de todos os quartos ordenados por seu número.</p>
+<h2>Modificadores de Parâmetros params</h2>
+<p>Os modificadores de parâmetros podem ser usados para, entre outras coisas, definir do modo dinâmico a alocação de parâmetros de uma função. Nesse caso inserimos o 'params' no ínicio dos nossos parâmetros, desse modo basta informarmos os parâmetros a serem considerados que haverá a alocação implicita dos mesmos dentro da função.</p>
+<h2>Modificadores ref e out</h2>
+<h3><i>ref</i></h3>
+<p>O modificador ref serve para indicar que a função irá alterar o valor da variável informada. Nesse caso quando associamos a instrução ref, uma vez que passemos uma variável dentro de um método, a saída desse método irá alterar o valor da variável de acordo com a proposta da variável.<b>Neste caso a variável precisa ser previamente iniciada para que seja aceita no parâmetro</b></p>
+<h3><i>out</i></h3>
+<p>Já a instrução out irá criar uma variável a partir dos parâmetros passados, nesse caso, passamos uma variável de entrada e, como parâmetro, dizemos qual o nome da variável de saída. Nesse caso, após a execução do método, podemos chamar a variável de saída diretamente. <b>Diferente do modificador ref, neste caso nossa variável não precisa ter sido previeamente iniciada.</b></p>
+<p>Uma observação importante é que, ambas as instruções (ref e out) devem ser evitadas na criação de um programa moderno. Essas instruções são, na prática, vestígios da integração entre C# e C++, uma vez que em C++ há a declaração de variáveis explicitas, algo que não ocorre no C#.</p>
+<h2>Boxing & Unboxing</h2>
+<h3>Boxing</h3>
+<p>O boxing consiste no uso do "tipo" Object para declaração de uma variável. Este tipo trata-se de uma classe sendo que, nesse caso, ele cria um apontamento direto com o heap, não havendo uma stack propriamente dita. Na prática este tipo aceita qualquer valor, porém isso gera um custo de processamento uma vez que é necessário buscar no heap cada novo uso dessa variável.</p>
+<h3>Unboxing</h3>
+<p>É o processo inverso do boxing, nesse método criamos uma variável com tipo definido que irá trazer para o stack o valor contido no heap. Dessa maneira, cada chamada do novo objeto será menos onerosa para a performance do programa.</p>
+<h1>Listas PT1</h1>
+<p>Nota: depende da lib System.Collections.Generic</p>
+<h2>Conceito de Lista</h2>
+<p>Consiste de uma estrutura de dados homogênea, ordenada, inicia vazia e seus elementos são alocados sob demanda e cada elemento ocupa um nó.<br /><br />Para inciarmos uma lista passamos a instrução 'List<tipo>' onde informamos o tipo de dado que a lista contera entre <>, em seguida iniciamos a lista com new List<>(). Essa declaração nos permite, inclusive, declarar uma lista sem iniciá-la, diferente do que ocorre com os vetores que precisam do seu tamanho previamente definido. Outra maneira de se declarar uma lista é substituir os parentesis por chaves e passar os valores entre as chaves, este modo de declaração irá além de alocar um novo objeto de lista, iniciar seu conteúdo.
+    <h3>Trabalhando com Listas - Métodos</h3>
+        <h4>Inserir elementos na lista</h4>
+            <li>.Add - Adiciona um elemento ao final da lista.</li>
+            <li>.Insert - Adiciona um valor na posição indicada. Nesse caso ele irá inserir o valor na posição indicada e empurrar o restante dos itens para frente.</li>
+        <h4>Extratindo o tamanho da lista</h4>
+            <li>.Count - Irá retornar o tamanho da lista, ou seja, a contagem de todos os seus itens instanciados.</li>
+        <h4>Encontrar primeiro ou último <b>item</b> que satisfaça um predicado</h4>
+            <li>.Find - retorna a primeira ocorrência de um item a partir de uma função ou predicado (lambda).</li>
+            <li>.FindLast - retorna a última ocorrência de um item a partir de uma função ou predicado (lambda).</li>
+        <h4>Encontrar primeiro ou último <b>posição</b> que satisfaça um predicado</h4>
+            <li>.FindIndex - com a mesma sintaxe do .Find, este método retorna a posição do primeiro item que coincide com o predicado.</li>
+            <li>.FindLastIndex - com a mesma sintaxe do .Find, este método retorna a posição do último item que coincide com o predicado.</li>
+        <h4>Filtrar uma lista com base em um predicado</h4>
+            <li>.FindAll - a partir de um predicado podemos criar uma nova lista contendo apenas os items aderentes à um predicado.</li>
+        <h4>Remover itens de uma lista</h4>
+            <li>.Remove - recebe um parâmetro e remove os itens que seja iguais à este parâmetro.</li>
+            <li>.RemoveAll - o RemoveAll recebe um prediacdo e remove todos os itens que coincidam com o predicado.</li>
+            <li>.RemoveAt - remove um item a partir de sua posição.</li>
+            <li>.RemoveRange - remove os itens da lista a partir de sua posição, mas neste caso passamos quantos itens serão removidos a partir dessa posição.</li>
+</p>
+<h2>Generics</h2>
+<p></p>
+<h2>Predicados (lambda)</h2>
+<p>Trata-se de uma função que, a partir de um valor, retorna true ou false. Pode-se dizer, no entanto, que neste caso usamos uma sintaxe resumida para essa declaração e esta função não pode ser invocada ou reutilizada, sendo, portanto, uma função anônima.
+    exemplo:
+    <p>
+        static void Test(string s)<br />{<br /> return s[0] == 'A';<br />}
+    </p>
+    pode ser tratado como:
+    <p>
+        ...(s => s[0] == 'A');
+    </p>
+</p>
+<h2>Exercício de Fixação: Listas</h2>
+<p>Fazer um programa para ler um número inteiro N e depois os dados (id, nome e salário) de N funcionários. Não deve haver repetição de id.<br />Em seguida, efetuar o aumento de X por cento no salário de um determinado funcionário. Para isso o programa deve ler um id e o valor X. Se o id informado não existir, mostrar uma mensagem e abortar a operação. Ao final, mostrar a listagem atualizada dos funcionários, conforme os exemplos.<br />Lembre-se de aplicar a técnica de encapsulamento para que o salário não possa ser alterado livremente. Um salário só pode ser alterado com base em uma operação de aumento por porcentagem dada.</p>

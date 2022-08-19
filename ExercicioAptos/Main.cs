@@ -34,6 +34,6 @@ public class main
             Console.WriteLine(list[i]);
         }
 
-        Console.WriteLine($"O valor total, mensal, recebido será: {list[0].TotalCash(list).ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"O valor total, mensal, recebido será: {Apartamento.TotalCash(list).ToString("F2", CultureInfo.InvariantCulture)}");
     }
 }

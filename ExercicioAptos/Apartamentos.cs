@@ -18,12 +18,12 @@ public class Apartamento
         Aluguel = price;
     }
 
-    public double TotalCash(Apartamento[] vetor)
+    public static double TotalCash(Apartamento[] vetor)
     {
         double total = 0.00;
         for (int i = 0; i < vetor.Length; i++)
         {
-            total += Aluguel;
+            total += vetor[i].Aluguel;
         }
 
         return total;
