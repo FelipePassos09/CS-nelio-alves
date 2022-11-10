@@ -1,0 +1,15 @@
+D:\Courses\CS-nelio-alves\Matrizes-exec1\bin\Debug\net6.0\Matrizes-exec1.exe
+D:\Courses\CS-nelio-alves\Matrizes-exec1\bin\Debug\net6.0\Matrizes-exec1.deps.json
+D:\Courses\CS-nelio-alves\Matrizes-exec1\bin\Debug\net6.0\Matrizes-exec1.runtimeconfig.json
+D:\Courses\CS-nelio-alves\Matrizes-exec1\bin\Debug\net6.0\Matrizes-exec1.dll
+D:\Courses\CS-nelio-alves\Matrizes-exec1\bin\Debug\net6.0\Matrizes-exec1.pdb
+D:\Courses\CS-nelio-alves\Matrizes-exec1\obj\Debug\net6.0\Matrizes-exec1.csproj.AssemblyReference.cache
+D:\Courses\CS-nelio-alves\Matrizes-exec1\obj\Debug\net6.0\Matrizes-exec1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Courses\CS-nelio-alves\Matrizes-exec1\obj\Debug\net6.0\Matrizes-exec1.AssemblyInfoInputs.cache
+D:\Courses\CS-nelio-alves\Matrizes-exec1\obj\Debug\net6.0\Matrizes-exec1.AssemblyInfo.cs
+D:\Courses\CS-nelio-alves\Matrizes-exec1\obj\Debug\net6.0\Matrizes-exec1.csproj.CoreCompileInputs.cache
+D:\Courses\CS-nelio-alves\Matrizes-exec1\obj\Debug\net6.0\Matrizes-exec1.dll
+D:\Courses\CS-nelio-alves\Matrizes-exec1\obj\Debug\net6.0\refint\Matrizes-exec1.dll
+D:\Courses\CS-nelio-alves\Matrizes-exec1\obj\Debug\net6.0\Matrizes-exec1.pdb
+D:\Courses\CS-nelio-alves\Matrizes-exec1\obj\Debug\net6.0\Matrizes-exec1.genruntimeconfig.cache
+D:\Courses\CS-nelio-alves\Matrizes-exec1\obj\Debug\net6.0\ref\Matrizes-exec1.dll

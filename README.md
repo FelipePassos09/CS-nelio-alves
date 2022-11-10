@@ -722,3 +722,133 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
 </p>
 <h2>Exercício de Fixação: Listas</h2>
 <p>Fazer um programa para ler um número inteiro N e depois os dados (id, nome e salário) de N funcionários. Não deve haver repetição de id.<br />Em seguida, efetuar o aumento de X por cento no salário de um determinado funcionário. Para isso o programa deve ler um id e o valor X. Se o id informado não existir, mostrar uma mensagem e abortar a operação. Ao final, mostrar a listagem atualizada dos funcionários, conforme os exemplos.<br />Lembre-se de aplicar a técnica de encapsulamento para que o salário não possa ser alterado livremente. Um salário só pode ser alterado com base em uma operação de aumento por porcentagem dada.</p>
+<h1>Matrizes</h1>
+<h3>Teoria Sobre Matrizes</h3>
+<p>Trata-se de um arranjo bidirecional de valores, ou seja, possuem colunas e linhas. <br />Assim como vetores, matrizes possuem tamanhos fixos, são dificeis de se incluir e remover valores, e precisam ser previamente instanciadas já com seu tamanho. Além disso, assim como nos vetores, as matrizes possuem um tipo único de dados que poderão armazenar.</p>
+<h2>Trabalhando com Matrizes</h2>
+<p>Assim como nos vetores, declaramos uma matriz inciando-a com o tipo de dado que ela irá armazenar, porém, como dito anteriormente, a matriz possui duas dimensões e, neste caso, passamos a quantidade de linhas como o primeiro valor dentro dos colchetes, e a quantidade de colunas como o segundo valor: new double[2,3].</p>
+<h3>.Length</h3>
+<p>Assim como em uma lista ou vetor, também podemos obter a contagem de itens de uma matriz a partir do método .Length. Geralmente a quantidade de itens será o produto entre linhas e colunas.</p>
+<h3>.Rank</h3>
+<p>Este método permite recuperarmos a quantidade de linhas desta matriz.</p>
+<h3>.GetLength</h3>
+<p>Este método retornará a quantidade de linhas quando passado o parâmetro 0, e a quantidade de colunas quando passado o parâmetro 1.</p>
+<h2>Exercicio de fixação: Matrizes</h2>
+<p>Fazer um programa para ler dois números inteiros (M e N) e depois criar uma matriz de M linhas por N colunas contendo números inteiros. Em seguida ler um número inteiro X que pertence à matriz. Para cada ocorrência de X mostrar os valores acima, à esquerda, à direita e abaixo de X, quando houver, conforme exemplo:
+<br/><br />
+<a href="https://github.com/acenelio/matrix2-csharp">Link do cód.</a>
+</p>
+<h1>Tópicos Especiais - Pt 1</h1>
+<h2>var - inferencia de tipos</h2>
+<p>A palavra 'var' pode ser utilizada em lugar da entrada do tipo, neste caso o compilador irá inferir, ou seja, aplicar, o tipo condizente com o valor passado à variável quando a mesma for iniciada. Neste caso podemos usá-la, virtualmente, para todos os tipos de dado, porém isso pode gerar problemas na execução do código pois deixa brechas para que um valor que nãos seja condizente com o tipo seja aplicado à variável.</p>
+<h2>Sintaxe alternativa - switch-case</h2>
+<p>É utilizado para se substituir uma sequência padronizada e encadeada de ifs, neste caso podemos, através do switch-case inserir passar a variável que queremos avaliar e, como cases, o que será realizado para cada valor que esta variável possua. Além disso, podemos (e é indicado) passar um valor padrão para a saída do loop. Temos, também, que finalizar o retorno de cada case com 'break', desse modo haverá a correta saída do loop.</p>
+<h2>Sintaxe Alternativa - Expressão condicional ternária</h2>
+<p>Podemos escrever um conjunto if-else de modo diferente, mais economico. Nesse caso passamos a nossa condição entre parentesis e as saídas quando true ou false, após á condição. Definimos o valor que será a saída quando true colocando-o após um ponto de interrogação ('?'), e o valor falso colocando-o após dois pontos (':'). Para essa operação precisamos atribuí-la como valor para uma variável, neste caso ela retornara o valor da variável diretamente, sem a necessidade de passarmos instruções alternativas (if e else) para atribuição deste valor.</p>
+<h2>Trabalhando e tratando strings</h2>
+<h3>.ToUpper</h3>
+<p>O método .ToUpper irá transformar todos os caracterese de uma string para maiúsculo.</p>
+<h3>.ToLower</h3>
+<p>Ao contrario do ToUpper, o ToLower irá transformar toda a string em minúscula.</p>
+<h3>.Trim</h3>
+<p>O método .Trim irá 'limpar' a string, ou seja, irá remover os espaços em branco antes e depois da string. Desse modo o primeiro e último caracteres válidos serão considerados para definir o começo e final da string.</p>
+<h3>.IndexOf</h3>
+<p>Irá retornar a primeira posição onde o caracter, ou a sequência de caracteres passada ocorre. Neste caso, caso seja uma sequencia, irá retornar a posição do primeiro carácter da sequencia na string.</p>
+<h3>.LastIndexOf</h3>
+<p>Ao contrário do método anterior, este método retorna a última posição de um caracter ou sequencia de caracteres. seguinda a mesma lógica para o primeir caracter coincidente da sequência.</p>
+<h3>.Substring</h3>
+<p>O método Substring retorna uma nova string com um pedaço da string associada. Este método possui as duas sobrecargas abaixo:
+    <h4>A partir do índice inicial apenas</h4>
+        <p>Irá retornar uma nova string a partir do índice passado, neste caso retornando todos os caracteres.</p>
+    <h4>A partir do índice e comprimento</h4>
+        <p>Esta sobrecarga adiciona a quantidade de posições que será retornada do método</p>
+</p>
+<h3>.Replace</h3>
+<p>É destinado á substituir caracteres de uma string, neste caso gerando uma nova string alterada. Possui algumas sobrecargas:
+    <h4>Usando o caractere buscado e o substituto [CHAR]</h4>
+        <p>Podemos, neste caso, passar o caractere que será substituído e o que entrará em seu lugar. Neste caso o método recebe os parâmetro como CHAR (aspas simples).</p>
+    <h4>Substituindo uma série de caracteres [STRING]</h4>
+        <p>Neste caso podemos usar strings como parâmetros, onde o método irá localizar a string do parâmetro dentro do objeto associado e substituí-la pela outra que foi passada.</p>
+</p>
+<h2>.IsNullOrEmpty</h2>
+<p>Este método avalia a string e retorna um booleano com a checagem se ela é, ou não, vazia.
+    <h4>String nula</h4>
+        <p>Trata-se de uma variável string sem um valor associado.</p>
+    <h4>String vazia</h4>
+        <p>Trata-se de uma string sem caracteres, ou seja, apenas com as aspas abertas e efchadas. (Neste caso o espaço conta como um caractere.)</p>
+</p>
+<h2>.IsNullOrWhiteSpace</h2>
+<p>Este método retorna um booleano checando se a string é nula ou se é apenas um conjunto de espaços, ou seja, não possui caracteres.</p>
+
+<h2>Trabalhando com DateTime</h2>
+    <p>O objeto datetime trata-se de um valor armazenado de ticks, ou seja, um total de 100 nanosegundos para cada tick, contados a partir do momento 0 da era atual. Ou seja, esse objeto pode representar qualquer modelo e/ou formato de data conhecido uma vez que seu valor real é um timestamp e não um valor absoluto.
+    <br /><br />
+    Outro detalhe acerca de datetimes é que eles são instanciados como um novo objeto, ou seja, sua declaração é feita da seguinte maneira:<br /><br />DateTime var = new DateTime(yyyy, MM, dd, HH, mm, ss, kind)<br />Cada parâmetro do novo objeto representa um totalizador e, no parâmetro kind, podemos definir o fuso-horário que será considerado para este objeto.É importante salientar que todos os parâmetros preciam receber valores integers.
+    </p>
+    <h3>Builders</h3>
+    <p>
+        Tratam-se de métodos do objeto DateTime onde podemos criar um objeto sem, necessáriamente, informarmos valores para este.
+        <h4>.Now</h4>
+            <p>Cria um objeto DateTime com a data e horário do momento de sua invocação, considerando o kind da máquina.</p>
+        <h4>.Today</h4>
+            <p>Cria um objeto DateTime com a data atual, mas horário 00:00:00, ou seja, inferindo o valor apenas da data, e não das horas.</p>
+        <h4>.UtcNow</h4>
+            <p>Análogo ao .Now, porém este cria o valor considerando o fuso-horário 0, ou GMT.</p>
+    </p>
+    <h3>.Parse()</h3>
+        <p>O método .Parse permite instanciarmos um objeto DateTime utilizando como parâmetro uma string. Neste cenário ele irá ler a string e transformá-la em um objeto DateTime contendo o seu respectivo valor. Atenção, este formato busca por layouts padronizados de data, então alguns formatos podem não ser reconhecidos.</p>
+    <h3>.ParseExact()</h3>
+        <p>Assim como o .Parse, este método também analisa uma string e retorna um objeto DateTime, porém este método permite que passemos qualquer formato desejado e, em um segundo parãmetro, o formato que deverá ser reconhecido. Por exemplo, ao passarmos a data "25/03/21", passamos o seguinte formato: "dd/MM/yy", desta forma o código conseguirá reconhecer os valores em cada um dos argumentos.</p>
+<h2>TimeSpan => Duração</h2>
+    <p>O objeto TimeSpan tem por objetivo apresentar durações, ou seja, usa de valores em ticks para representar intervalos de tempo. Para tanto ao declaramos um novo TimeSpan podemos usar seu construtor padrão, informando os valores de dias, horas, minutos e segundos ou, também, usar um valor em ticks para recuprear este valor. A sua saída será um valor formatado tal qual d.HH:mm:ss.</p>
+    <h3>Métodos From</h3>
+        <p>Os métodos From permitem conversarmos com o TimeSpan em unidades inteiras, por exemplo, usando um FromDays e passando o valor 1.5 como atributo, temos o retorno de um TimeSpan contendo o valor 1.12:00:00. Isso é muito imporante para tranalharmos com durações mais resumidas ou em escalas maiores, sem a necessidade de utilizarmos diretamente os totais de ticks.
+            <ul>
+                <li>.FromDays - Permite criarmos um TimeSpan a partir do totalizador de dias.</li>
+                <li>.FromHours - Permite criarmos um TimeSpan a partir do totalizador de horas.</li>
+                <li>.FromMinutes - Permite criarmos um TimeSpan a partir do totalizador de minutos.</li>
+                <li>.FromSeconds - Permite criarmos um TimeSpan a partir do totalizador de segundos.</li>
+                <li>.FromMilliseconds - Permite criarmos um TimeSpan a partir do totalizador de milissegundos.</li>
+                <li>.FromTicks - Permite criarmos um TimeSpan a partir do totalizador de ticks, neste caso precisamos passar o 'L' ao final do número de ticks para indicar se tratar de um long.</li>
+            </ul>
+        </p>
+<h2>Nivelamento GIT + Github</h2>
+<p>
+    Para fins de nivelamento alguns conteúdos serão abordados, as prioncipais anotações e pontos de interesse irei comentar aqui:
+    <h3>Git Init</h3>
+        <p>Comando usado para criação de um repositório local, nesse sentido, o repósitório local é um conjunto de arquivos que serão versionados no repositorio remoto (remote).</p>
+    <h3>Git Commit</h3>
+        <p>Um commit se resume em uma versão do código desenvolvido, no commit são gravadas as alterações realizadas no código, de modo que, a partir de seu registro, possamos retornar ao estado anterior à alterações de maneira simples e controlada. Em paralelo, um commit também serve para controlarmos o estado de desenvolvimento e os incrementos realizados.</p>
+    <h3>Git Add</h3>
+        <p>Usado para serem inclusos os arquivos que serão commitados, ou seja, com ele listamos os arquivos que iremos atualizar neste commit e enviamos os mesmos para a área de stage para que façamos o commit, podendo ser todos os arquivos editados.</p>
+    <h3>Git Pull, Push, Clone</h3>
+        <p>São instruções de incremento ou atualização dos dados entre o repositório local e o remoto:
+            <ul>
+                <li>Clone: Usado para fazermos uma cópia local dos dados armazenados no repositório remoto.</li>
+                <li>Pull: Usado para retornarmos, a partir do repositório remoto, as alterações mais recentes.</li>
+                <li>Push: Usado para enviar ao remote os commits já criados a partir das alterações no repositório local.</li>
+            </ul>
+        </p>
+    <h3>Git Status</h3>
+        <p>Usado para vermos os status das atuais alterações e/ou atualizações nos arquivos do repositório local. Em resumo ele retorna o status das alterações em stage, ou seja, ainda não commitadas.</p>
+    <h3>Git Reset</h3>
+        <p>Usado para limparmos o stage, ou seja, excluirmos os registros de alterações realizados antes de fazermos o commit.</p>
+    <h3>Git Branch</h3>
+        <p>Usado para criar uma nova branch no nosso repositório.</p>
+    <h3>Git Add remote</h3>
+        <p>Usado para endereçar o nosso repositório, ou seja, gravar o endereço do repositorio, seja no guthub, bitbucket ou outro.</p>
+    <h3>Git Checkout</h3>
+        <p>Usado para voltar, ou posicionar, o nosso repositório em uma release anterior, isso é importante para podermos checar ou testar alguma alteração prévia. <b>Muito importante: quando estivermos dentro de um checkout fora da nossa branch principal devemos evitar alterações nos aqruivos, assim como devemos, também, nos certificarmos de termos limpado toda a stage antes de voltarmos para a branch principal, do contrário essa alterações podem ficar perdidas ou alterar os arquivos da branch gerando problemas para o código.</b></p>
+    <h3>Outras Funcionalidades do Git</h3>
+        <p>Além de criarmos e atualizarmos os repositórios, com o Git podemos também manipular os arquivos a partir do remote, de modo que possamo navegar entre as versões e atualizarmos nosso projeto em relação às mesmas. Isso é um facilitador no dia a dia, porém pode gerar alguns conflitos conforme abaixo:
+            <h4>Conflito de Pull por Históricos Diferentes</h4>
+                <p>Esse conflito ocorre em casos onde o repositório local não está atualizado em relação ao remote e há algum commit que não foi sincronizado. Nesse caso podemos fazer um Pull para atualizar o nosso projeto e, em seguida, refazer o push com o nosso commit. <b>Importante: Esse método somente é permitido nos casos onde o commit faltante não envolvia o arquivo alterado.</b></p>
+            <h4>Conflito de Pull por Merge de Três Vias</h4>
+                <p>Isso ocorre quando o seu commit envolve algum arquivo que sofreu alteração recente e o commit não foi sincronizado no seu repositório local. Nesse caso podemos fazer um pull e, então, decidir quais alterações serão mantidas. Após fazermos as correções, fazemos um novo commit, enviamos as alterações novamente para o Stage e fazemo um push definitivo atualizando o remote.</p>
+            <h4>Sobrescrevendo Históricos</h4>
+                <p>Caso queiramos descartar e excluir commits, podemos fazer um git reset --hard ,cód. commit> e, desta forma, iremos fazer um rollback do nosso repositório até o commit selecionado.<b>Importante: Essa ação descarta todos os históricos e incrementos de forma definitiva, após executada não é possível voltar com os incrementos.</b></p>
+        </p>
+</p>
+<h1>Intermediário</h1>
+    <h2>Enumerações e Composição</h2>
+        <p>Aqui iremos aprender a definir as durações de cada objeto, como compor objetos.</p>
