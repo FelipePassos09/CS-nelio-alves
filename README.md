@@ -888,3 +888,4 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
     A composição nos traz várias vantagens como uma melhor organização dos componentes, maior coesão do código, maior flexibilidade visto podermos distribuir de modo mais fragmentado os componentes e o reuso visto que com uma maior flexibilidade podemos adaptar a aplicação de componentes com poucas alterações.
     </p>
     <p><b>Nota:</b> embora o simbolo UML para composição seja o diamante preto, no nosso caso ele irá representar tanto uma composição tem um quanto tem vários, ou seja, o todo parte será distribuído a partir do mesmo nó caso hajam interdependências de composição.</p>
+    <p>Durante uma composição podemos referenciar tanto objetos interligados quanto módulos destes, dessa maneira podemos compartimentar e orquestrar melhor os componentes.</p>
