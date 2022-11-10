@@ -852,3 +852,39 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
 <h1>Intermediário</h1>
     <h2>Enumerações e Composição</h2>
         <p>Aqui iremos aprender a definir as durações de cada objeto, como compor objetos.</p>
+    <h2>Tipos Enumerados</h2>
+        <p>
+            <h3>Definição</h3>
+                <p>Uma Enumeração é um componente básico, criado a partir de um mapping contendo Valores e Chaves, nesse caso uma enumeração serve como um dicionário de valores possíveis para um atributo ou valor contido dentro de um objeto.</p>
+            <h3>Exemplo</h3>
+                <p>Diretório Entities, Classe Order <br/>Diretório / Projeto: ./RascunhosDiversos/RascunhosDiversos.sln</p>
+            <h3>Trabalhando com Enums</h3>
+                <p>Para trabalharmos com enumerações temos diversas maneiras, porém a melhor prática é criarmos dentro do diretório que conterá as classes, um segundo sub-diretório contendo todas as enumerações. Deste modo tudo ficará oprdenado e melhor distribuído dentro da aplicação.
+                <br/><br/>
+                Para declararmos uma enumeração basta criarmos uma nova classe e declararmos a enumeração no lugar da classe, nesse caso substituindo, também, a instrução class por enum.
+                </p>
+            <h3>UML com Enums</h3>
+                <p>Para declararmos uma enum dentro do diagrama de UML precisamos passar o estereótipo desta entidade dentro do bloco no qual ela será definida. Para declararmos um estereótipo basta usar um conjunto de dois < + dois > envolvendo a palavra Enum. Uma outra coisa importante é passarmo o estereótipo dentro dos valores desta entidade, e também definir dentro da classe onde essa enum for utilizada, no valor que será atribuído pelo enum, que o mesmo trata-se de uma enumeração.</p>
+        </p>
+    <h2>Design</h2>
+        <p>Em uma arquitetura orientada à objetos devemos partir do princípio que tudo será um objeto, neste caso tendo suas classes associadas, portanto é importante levarmos em conta a definição de categorias das classes para facilitar a organização, flexibilidade, reuso, manutenção, delegação e etc, neste caso havendo várias categorias de classes.
+            <ul>
+                <li>Entities</li>
+                <li>Controllers</li>
+                <li>Services</li>
+                <li>Views</li>
+                <li>Repositories</li>
+                <li>Tools</li>
+            </ul>
+        <h3>Entities</h3>
+            <p>Uma entitie se resume por uma parcela do negócio cujo sistema trata, de forma geral, são pedaços do produto alvo da solução. Por exemplo, para um sistema de vendas temos as entidades como pedidos, clientes, produtos, etc; já para um sistema de logítica as entidades podem ser as rotas, veículos, motoristas, pacotes, etc.</p>
+        <h3>Services</h3>
+            <p>São os serviços feitos pelo sistema, ou seja, as interações que o sistema executa, seja entre entidades ou com aplicações externas como envio de e-mails ou consulta e gravação de informações no banco de dados.</p>
+        </p>
+<h2>Composição</h2>
+    <p>
+    Tratamos por composição uma estrutura de distribuição de objetos onde é permito que um objeto contenha outro em si, ela pode possur tanto a relação "tem um" como a relação "tem vários".
+        <br/><br/>
+    A composição nos traz várias vantagens como uma melhor organização dos componentes, maior coesão do código, maior flexibilidade visto podermos distribuir de modo mais fragmentado os componentes e o reuso visto que com uma maior flexibilidade podemos adaptar a aplicação de componentes com poucas alterações.
+    </p>
+    <p><b>Nota:</b> embora o simbolo UML para composição seja o diamante preto, no nosso caso ele irá representar tanto uma composição tem um quanto tem vários, ou seja, o todo parte será distribuído a partir do mesmo nó caso hajam interdependências de composição.</p>
