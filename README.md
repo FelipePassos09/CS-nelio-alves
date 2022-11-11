@@ -889,3 +889,4 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
     </p>
     <p><b>Nota:</b> embora o simbolo UML para composição seja o diamante preto, no nosso caso ele irá representar tanto uma composição tem um quanto tem vários, ou seja, o todo parte será distribuído a partir do mesmo nó caso hajam interdependências de composição.</p>
     <p>Durante uma composição podemos referenciar tanto objetos interligados quanto módulos destes, dessa maneira podemos compartimentar e orquestrar melhor os componentes.</p>
+    
