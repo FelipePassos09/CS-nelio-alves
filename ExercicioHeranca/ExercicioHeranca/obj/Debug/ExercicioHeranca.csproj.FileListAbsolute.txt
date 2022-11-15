@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ExercicioHeranca\ExercicioHeranca\bin\Debug\ExercicioHeranca.exe
+S:\Courses\CS-nelio-alves\ExercicioHeranca\ExercicioHeranca\bin\Debug\ExercicioHeranca.pdb
+S:\Courses\CS-nelio-alves\ExercicioHeranca\ExercicioHeranca\obj\Debug\ExercicioHeranca.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExercicioHeranca\ExercicioHeranca\obj\Debug\ExercicioHeranca.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ExercicioHeranca\ExercicioHeranca\obj\Debug\ExercicioHeranca.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExercicioHeranca\ExercicioHeranca\obj\Debug\ExercicioHeranca.exe
+S:\Courses\CS-nelio-alves\ExercicioHeranca\ExercicioHeranca\obj\Debug\ExercicioHeranca.pdb
