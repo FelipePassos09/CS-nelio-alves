@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ExercicioPolimorfismo\EmployeCad\EmployeCad\bin\Debug\EmployeCad.exe
+S:\Courses\CS-nelio-alves\ExercicioPolimorfismo\EmployeCad\EmployeCad\bin\Debug\EmployeCad.pdb
+S:\Courses\CS-nelio-alves\ExercicioPolimorfismo\EmployeCad\EmployeCad\obj\Debug\EmployeCad.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExercicioPolimorfismo\EmployeCad\EmployeCad\obj\Debug\EmployeCad.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ExercicioPolimorfismo\EmployeCad\EmployeCad\obj\Debug\EmployeCad.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExercicioPolimorfismo\EmployeCad\EmployeCad\obj\Debug\EmployeCad.exe
+S:\Courses\CS-nelio-alves\ExercicioPolimorfismo\EmployeCad\EmployeCad\obj\Debug\EmployeCad.pdb

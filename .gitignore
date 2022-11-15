@@ -177,6 +177,10 @@ project.lock.json
 # Visual Studio Code
 .vscode/
 
+# Debug Files
+*obj/Debug
+*bin/debug
+
 # Output folder used by Webpack or other FE stuff
 **/node_modules/*
 **/wwwroot/*

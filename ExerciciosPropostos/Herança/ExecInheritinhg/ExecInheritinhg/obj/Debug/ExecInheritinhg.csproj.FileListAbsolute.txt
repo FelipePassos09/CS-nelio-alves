@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Herança\ExecInheritinhg\ExecInheritinhg\bin\Debug\ExecInheritinhg.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Herança\ExecInheritinhg\ExecInheritinhg\bin\Debug\ExecInheritinhg.pdb
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Herança\ExecInheritinhg\ExecInheritinhg\obj\Debug\ExecInheritinhg.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Herança\ExecInheritinhg\ExecInheritinhg\obj\Debug\ExecInheritinhg.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Herança\ExecInheritinhg\ExecInheritinhg\obj\Debug\ExecInheritinhg.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Herança\ExecInheritinhg\ExecInheritinhg\obj\Debug\ExecInheritinhg.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Herança\ExecInheritinhg\ExecInheritinhg\obj\Debug\ExecInheritinhg.pdb

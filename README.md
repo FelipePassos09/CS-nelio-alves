@@ -889,4 +889,62 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
     </p>
     <p><b>Nota:</b> embora o simbolo UML para composição seja o diamante preto, no nosso caso ele irá representar tanto uma composição tem um quanto tem vários, ou seja, o todo parte será distribuído a partir do mesmo nó caso hajam interdependências de composição.</p>
     <p>Durante uma composição podemos referenciar tanto objetos interligados quanto módulos destes, dessa maneira podemos compartimentar e orquestrar melhor os componentes.</p>
-    
+<h2>Herança</h2>
+    <p>Entende-se por herança o comportamento pelo qual permitimos que uma classe herde dados e comportamentos de outra atrvés de um processo de associação.
+    <br/>
+    Geralmente usamos o mecanismo de herança para estender os métodos e dados de uma classe, ou, por vezes, um método, para outra, sendo para isto utilizado o caractér de ':' (dois pontos) para  indicar que estará sendo feita esta extensão.
+    <br/>
+    Uma das principais aplicações de herança é a possibilidade de modularização e reutilização de código, 
+    </p>
+    <p>Dentro de uma associação por herança temos uma distinção quanto à uma associação por composição onde, no caso da herança, associamos uma classe à outra e, neste caso, ao ser instanciado um objetto da classe referenciada apenas um objeto é criado. Neste caso tratamos a associação por herança por dois elementos, uma superclasse e uma subclasse, ou seja esse tipo de associação visa especializar um comportamento a partir de uma generalização.</p>
+    <p>Por exemplo:</p>
+    <p>Temos uma aplicação onde, a classe principal, chamada Player, contém os métodos Play, Pause e Stop, e temos a classe Recorder, que além destes três métodos, possui um método chamado Record. Neste caso, para não termos que implementar novamente os três métodos que são iguais, podemos apenas criar a classe Recorder herdando a classe Player, desta maneira ela se torna uma especialização da classe principal, ou uma subclasse.</p>
+    <p>
+        <h4>Atrubuto Protected</h4>
+            <p>Para encapsularmos de modo eficaz algum atributo ou método de modo que apenas as Subclasses tenham acesso precisamos utilizar o o atibuto protected ao invés dp private. No caso o protected permite o acesso aos atributos apenas para as classes herdeiras, desse modo, preservando que outros elementos do programa tenham acesso.</p>
+    </p>
+    <h2>Upcasting e Downcasting</h2>
+        <p>
+            <h3>Upcasting</h3>
+                <p>Trata-se, de modo resumido, do casting da subclasse para a classe, comumente usado para criação de polimorfismos na classe principal.</p>
+                <p>
+                    Ou seja, se instaciarmos um objeto da classe pai, podemos atribuir o seu valor como um objeto da classe filho, nesse caso fazendo um upcasting, ou seja, elevando o grau de especificação desse objeto visto que todos os objetos da classe filho são pertencentes à classe pai por herança. O contrário, entretanto, não é possível pois os objetos da classe filho podem possuir especificações não compreendidas pela classe pai.
+                </p>
+            <h3>Downcasting</h3>
+                <p>Como o nome sugere, é o processo inverso, do casting da superclasse, para a subclasse, pode ser identificado pelas palavras as/is. É comomente usado em métodos que recebem parâmetros genéricos.</p>
+                <p>
+                    O downcasting, em oposição ao upcasting, necessita que validemos se os tipos de objetos são compatíveis, ou seja, se podem, ser convertidos para os tipos desejados, isso de forma explicita pois, o .Net não consegue validar esse relacionamento de forma implicita. Por exemplo: instaciamos um objeto da classe pai como um novo objeto da classe filho A (isso é possível), em seguida atribuimos este este objeto A para um novo objeto da Classe filho, neste caso devemos dizer que o objeto que está sendo atribuído pertence à essa classe, isso usando tanto a sintaxe padrão (informando o tipo entre parenteses 'colado' antes da variável) ou a palavra 'as', que se destina à dizer que algo é (ou pertence) à classe mencionada.
+                    <br/><br>
+                    Outro porém é que precisamos sempre nos certificar que os objetos para o downcasting são compativeis, para isso podemos usar a instrução 'is' que retorna um boolean a partir da checagem se a classe do objeto à sua esquerda é igual à classe passada como parâmetro à direita, ex: if(pessoa is Human){}
+                </p>
+        </p>
+        <p>Dentro de operações com Up e Downcasting temos a possibilidade, após instaciada um objeto a partir de um classe, alterarmos essa classe em relação ao seu relacionamento com as heranças.</p>
+<h2>Sobreposição [virtual, base, override]</h2>
+    <p>Tratamos por sobreposição a possibilidade de adequarmos comportamentos de métodos e/ou atributos em função da herança. Nesse caso podemos definir comportamentos alternativos para os métodos já implementados na classe pai adequando-os de acordo com as classes filho, mas mantendo seus nomes.
+        <h4>Virtual</h4>
+            <p>Para podermos utilizar a sobreposição de um método em uma classe herdeira, primeiramente precisamos incluir a instrução virtual no métodos que queremos alterar o comportamento. A instrução virtual diz que, para as classes herdeiras, este método permite ser sobreposto (ou sobrecarregado).</p>
+        <h4>Override</h4>
+            <p>O Override é uma instrução incluída no método que permite inferir um comportamento distinto para este método quando o objeto pertencer à classe na qual ele está escrito, ou seja, adequando o comportamento do método em função da classe do objeto. Desta maneira podemos evitar o uso de muitos métodos distintos quando, a depender da classe, um método possui um comportamento diferente.</p>
+        <h4>Base</h4>
+            <p>A palavra base serve para inferirmos o valor a partir da classe pai, ou seja, reutilizarmos o que há na classe pai da forma como é, seja um método ou a configuração de algum método ou construtor. Quando utilizado fora das chaves (escopo) deve ser precedido por ':' (dois-pontos), quando usado dentro ele faz as vezes do nome de um objeto, sendo usada a palavra base precedendo o método aplicado.</p>
+    </p>
+<h2>Classes e Métodos Selados</h2>
+    <p>Para selarmos uma classe ou método incluímos a palavra sealed. O comportamento difere um pouco entre as classes e métodos:
+        <h4>Classes</h4>
+            <p>Quando selamos uma classe dizemos que esta não poderá ser herdada por outras subclasses, isso é muito usado para protegermos alguma regra de negócio para uso indevido ou mesmo para preservarmos alguns comportamentos encapsulados apenas dentro desta classe.</p>
+        <h4>Métodos</h4>
+            <p>
+            Quando selamos um método isso implica que este não poderá ser sobreescrito mais de uma vez, ou seja, limitaremos a sobrecarga deste método à apenas uma herança. Isso é importante tando para controlarmos a sobrecarga desnecessária de métodos, o que pode gerar problemas diversos como para aumentar a performance pois, quando há um método selado o processamento se encerra antes de buscar por sobrecargas
+            </p>
+    </p>
+<h2>Polimorfismo</h2>
+    <p>
+    Consiste de um paradigma onde podemos mudar os comportamentos e características de objetos em função de suas heranças e sobrecargas. Em resumos, o comportamento de cada objeto, mesmo pertencendo à mesma classe principal, muda em função de cada especificação.<br/>
+    <b>Importante: a associação do tipo específico de um objeto é feita em tempo de execução, ou seja, durante o casting. O compilador não sabe, de modo prévio, quano o tipo especifico da chamada antes do castging ser realizado.</b>
+    </p>
+<h2>Classes Abstratas</h2>
+    <p>Consistem de classes onde não é possivel instanciar objetos nela, apenas em suas classes herdadas. Isso posto, uma classe abstrata não pode ser acessada por nenhum outro local nem ser instanciada diretamente, apenas suas classes filhas e sobrecargas podem ser utilizadas. É muito útil quando temos que criar uma camada generica a partir da qual nossa entidades derivarão, desse modo protegendo e evitando erros. Para definirmos uma classe como abstrata basta adicionarmos a palavra abstract antes da declaração da classe (abstract public class <i>nome_da_classe</i>)</p>
+    <h3>Métodos Abstratos</h3>
+        <p>
+            Podemos, também, criar métodos abstratos, estes precisam, obrigatóriamente, estar inclusos em uma classe abstrata. Por mais que sigam a mesma lógica, os métodos abstratos possuem algumas particularidades, por exemplo, eles não precisam levar virtual para poderem ser sobreencritos e precisam ser, obrigatóriamente, sobreescrito em todas as classes herdeiras.
+        </p>
