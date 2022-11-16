@@ -948,3 +948,15 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
         <p>
             Podemos, também, criar métodos abstratos, estes precisam, obrigatóriamente, estar inclusos em uma classe abstrata. Por mais que sigam a mesma lógica, os métodos abstratos possuem algumas particularidades, por exemplo, eles não precisam levar virtual para poderem ser sobreencritos e precisam ser, obrigatóriamente, sobreescrito em todas as classes herdeiras.
         </p>
+<h2>Exception</h2>
+    <p>Exceção é o nome dado á uma condição de erro ou comportamento não esperado pelo programa em execução. No .Net todas as exceptions são objetos herdados do System.Exception e possuem como comportamento a propagação na pilha de chamadas aguardando que sejam capturadas ou que o programa seja encerrado. Podemos, assim como em outras tecnologias, criar nossas próprias exceções, porém além disso, podemos interceptá-las de modo que geremos comportamentos alternativos de modo à contornar erros e evitar quebras ou encerramentos indevidos do programa.</p>
+    <p>A implementação de exceções também permite o tratamento de erros a partir do modelo de classes, tornando o código mais organizado e controlado, promovendo uma maior flexibilidade em relação ao tratamento de erros, usando boas práticas. Além disso também podemos hierquizar o controle de exceções e manipular os dados retornados pela exceção, permitindo maior aproveitamento da estrutura e maior assertividade no tratamento de erros.</p>
+        <h3>Estrutura try-catch</h3>
+            <p>A estrutura try-catch permite executarmos um trecho de código e, em seguida, setarmos um ou mais blocos de execução a partir da exception gerada pelo try. Desse modo podemos, além de evitarmos que os erros que eventualmente quebrariam o programa sejam tratados de modo específico, ou mesmo de modo generalista, apenas aplicando um bypass se aplicável. Outra facilidade que essa estrutura promove é podermos programar comportamentos distintos em virtude das exceptions que sejam retornadas, dessa forma podemos flexibilizar muito nosso código para que erros sejam contornados de acordo com suas causas.</p>
+        <h3>Bloco finally</h3>
+            <p>o bloco finally é aplicado para que, havendo ou não um lançamento de exception ele seja executado. Isso devido à algumas implementações em que há a necessidade de se efetuar uma ação posterior à execução do bloco try e/ou catch, desse modo garantindo que seja executada a instrução.</p>
+        <h3>Criando exceptions personalizadas</h3>
+            <p>Para criarmos uma ou mais exceptions novas precisamos criar uma nova classe, ou classes para cada grupo de exceções, e extender a classe para ApplicationException, neste caso iremos herdar todos os métodos e demais atributos necessários para criar uma exceção. A partir de então podemos instanciar o lançamento da exceção a partir da palavra trow, que faz as vezes do return. 
+            <br/>
+            Ao criarmos uma nova exception podemos, entre outras coisas, incrementar a mensagem, o código, os dados, e os demais atributos padrão que uma exception pode receber.
+            </p>

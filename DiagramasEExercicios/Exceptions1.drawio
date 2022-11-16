@@ -1,0 +1,43 @@
+<mxfile host="65bd71144e">
+    <diagram id="a3pv-iuowNBAgYc-iqeK" name="Página-1">
+        <mxGraphModel dx="672" dy="403" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Account" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="170" width="210" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="- number: integer&#10;- holder: string&#10;- balance: double&#10;- withdrawLimit: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+                    <mxGeometry y="26" width="210" height="74" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="2" vertex="1">
+                    <mxGeometry y="100" width="210" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="+ deposit(ammounty: Double): void&#10;+ withdraw(ammount: Double): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+                    <mxGeometry y="108" width="210" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;h1&gt;&lt;span&gt;Exercicio de Fixação&lt;/span&gt;&lt;/h1&gt;&lt;h1&gt;&lt;span style=&quot;font-size: 12px ; font-weight: 400&quot;&gt;Fazer um programa que leia os dados de uma conta bancária e depois realizar um saque nesta conta, mostrando o novo saldo. Um saque não pode ocorrer ou se não houver saldo ou se exceder o limite de saque da conta. Implemente a conta conforme a classe abaixo:&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="30" width="750" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="229" y="360" width="370" height="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fillColor=none;strokeWidth=4;" parent="15" vertex="1">
+                    <mxGeometry width="370" height="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Output Example:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="15" vertex="1">
+                    <mxGeometry x="126" y="10" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Enter account data&lt;br&gt;Number: 8021&lt;br&gt;Holder: Bob Brown&lt;br&gt;Initial Balance: 500.00&lt;br&gt;Withdraw limit: 300.00&lt;br&gt;&lt;br&gt;Enter amount for withdraw: 100&lt;br&gt;New balance: 400.00" style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="15" vertex="1">
+                    <mxGeometry x="40" y="50" width="290" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Enter account data&lt;br&gt;Number: 8022&lt;br&gt;Holder: Bob Brown&lt;br&gt;Initial Balance: 500.00&lt;br&gt;Withdraw limit: 300.00&lt;br&gt;&lt;br&gt;Enter amount for withdraw: 400&lt;br&gt;Withdraw error: The amount exceeds withdraw limit." style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="15" vertex="1">
+                    <mxGeometry x="40" y="180" width="290" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Enter account data&lt;br&gt;Number: 8023&lt;br&gt;Holder: Bob Brown&lt;br&gt;Initial Balance: 200.00&lt;br&gt;Withdraw limit: 300.00&lt;br&gt;&lt;br&gt;Enter amount for withdraw: 250.00&lt;br&gt;Withdraw error: Not enough balance." style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="15" vertex="1">
+                    <mxGeometry x="40" y="310" width="290" height="120" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

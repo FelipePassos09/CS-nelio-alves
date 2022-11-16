@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Exceptions\bin\Debug\Exceptions.exe
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Exceptions\bin\Debug\Exceptions.pdb
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Exceptions\obj\Debug\Exceptions.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Exceptions\obj\Debug\Exceptions.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Exceptions\obj\Debug\Exceptions.exe
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Exceptions\obj\Debug\Exceptions.pdb

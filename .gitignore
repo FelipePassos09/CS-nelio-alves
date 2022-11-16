@@ -181,6 +181,9 @@ project.lock.json
 *obj/Debug
 *bin/debug
 
+# Project Models
+*/xadrez-console(Original)
+
 # Output folder used by Webpack or other FE stuff
 **/node_modules/*
 **/wwwroot/*

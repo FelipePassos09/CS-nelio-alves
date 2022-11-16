@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Polimorfismo\ExecPolimorf\bin\Debug\ExecPolimorf.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Polimorfismo\ExecPolimorf\bin\Debug\ExecPolimorf.pdb
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Polimorfismo\ExecPolimorf\obj\Debug\ExecPolimorf.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Polimorfismo\ExecPolimorf\obj\Debug\ExecPolimorf.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Polimorfismo\ExecPolimorf\obj\Debug\ExecPolimorf.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Polimorfismo\ExecPolimorf\obj\Debug\ExecPolimorf.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Polimorfismo\ExecPolimorf\obj\Debug\ExecPolimorf.pdb
