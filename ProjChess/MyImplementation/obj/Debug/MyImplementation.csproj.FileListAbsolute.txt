@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ProjChess\MyImplementation\bin\Debug\MyImplementation.exe
+S:\Courses\CS-nelio-alves\ProjChess\MyImplementation\bin\Debug\MyImplementation.pdb
+S:\Courses\CS-nelio-alves\ProjChess\MyImplementation\obj\Debug\MyImplementation.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ProjChess\MyImplementation\obj\Debug\MyImplementation.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ProjChess\MyImplementation\obj\Debug\MyImplementation.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ProjChess\MyImplementation\obj\Debug\MyImplementation.exe
+S:\Courses\CS-nelio-alves\ProjChess\MyImplementation\obj\Debug\MyImplementation.pdb
