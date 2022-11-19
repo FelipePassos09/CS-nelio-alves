@@ -960,3 +960,40 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
             <br/>
             Ao criarmos uma nova exception podemos, entre outras coisas, incrementar a mensagem, o código, os dados, e os demais atributos padrão que uma exception pode receber.
             </p>
+<h2>Trabalhando com Arquivos</h2>
+    <h3>File, FileInfo</h3>
+        <p>Para trabalharmos com arquivos no C# precisamos utilizar a biblioteca System.IO, esta contém as classes e métodos que permitem abrirmos e tratarmos arquivos no formato de objetos FileStream. Neste caso temos os métodos comuns create, copy, delete, move, open, etc..</p>
+        <h4>File</h4>
+            <p>
+                A classe file é uma classe que possui apenas mebros estáticos, ou seja, não requer a instanciação para que sejam acessados os métodos. Outro ponto é que, por não haver a instanciação, o sistema irá realizar uma verificação de segurança a cada operação realizada agregando uma perda de performance em virtude dessas verificações.
+            </p>
+        <h4>FileInfo</h4>
+            <p>Já a classe FileInfo requer a instanciação do arquivo como um objeto da classe, nesse caso nao requerendo uma nova verificação de segurança a cada operação, mas agregando maior complexidade na implementação.</p>
+    <h3>IOExceptions</h3>
+        <p>Assim como outras bibliotecas, a biblioteca IO possui suas próprias exceptions.</p>
+<h2>Abrindo e Lendo Arquivos</h2>
+    <p>Podemos abrir e ler arquivos usando as classes File e FileInfo apenas passando o caminho completo, ou relativo, como argumento. No caso do FileInfo o instanciamos como um novo objeto do tipo FileInfo passando no construtor uma string com o caminho para o arquivo.<br/><br/><b>Dica: para evitarmos ter que aplicar escapes nos caminhos para os diret´roios podemos, ao invés disso, inserir um @ antes de começarmos a string, isso diz ao C# que o conteúdo da string trata-se de um endereço ao invés de uma string normal (iso quando estamos no windows, no linux a sintaxe dos diretórios é com barra comum ao invés de contra-barra).</b></p>
+<h2>FileStream e StreamReader</h2>
+    <p>Os objetos FileStream e StreamReader trabalham em conjunto, muitas vezes, para trabalharmos com arquivos, sendo estes, respectivamente, uma instânciação em modo binário do arquivo que estamos abrindo enquanto o outro uma camada de interpretação deste binário na forma de caracteres, desse modo podemos trafegar dados entre o arquivo e o código de modo sequencial (stream). O FileStream compreende basicamente as operações de read e write-bytes, enquanto que o StreamReader utiliza read-chars para sua leitura. Ambos os tipos de objeto podem ser instaciados de modos diversos, inclusive a partir de suas próprias classes.<br/><br/><b>Atenção: os objetos FileStream e StreamReader não são gerenciados pelo CLS do .Net, ou seja, são criados e manipulados diretamente pelo sistema operacional, nesse caso precisamos sempre fechá-los após o seu uso, podemos, portanto usar os métodos .Close() para essa finalidade.</b></p>
+    <p>Um outro detalhe é que, para usarmos estes dois elementos precisamos instanciá-los previamente, ou utilizar algum método que o faça, sempre nos atentando que o StreamReader apenas lê objetos do tipo FileStream. Dessa forma podemos, ao invés de instaciar um FileStream e, em seguida, um objeto StreamReader, apenas criar um novo StreamReader vazio e atribuir o valor dele a partir de um objeto File ou FileInfo, usando algum método (.OpenText, por exemplo) que crie o FileStream de forma implícita.</p>
+    <h3>Comportamento</h3>
+        <p>Ao abrirmos um objeto de texto, por exemplo, este é instanciado como um vetor de strings e para podermos imprimir ou tratar todo o conteúdo precisamos percorrer este arquivo usando while ou foreach para isso.Dentro do StreamReader temos um métod chamado .EndOfStream que retorna um bool de acordo com o final do arquivo, podemos usar este como parâmetro para pararmos a execução de um loop caso optemos pelo while como método para percorrer os dados.</p>
+<h2>Bloco <i>using</i></h2>
+    <p>
+        Podemos, também, instanciar nosso arquivo dentro de um bloco using, ou seja, encapsularmos o uso do arquivo dentro de um bloco para isolá-lo do restante do programa. Esse método é útil quando prevemos um uso momentâneo do dado em vez de usar o arquivo continuamente. Além disso, o using permite o uso de objetos Stream sem a necessidade de fecharmos eles manualmente, ou seja, este método irá fechar o objeto automaticamente quando encerrar sua execução.
+        <br />
+        Para usarmos um bloco using primeiro abrimos o bloco com using ('StreamObjectType' varName = new 'StreamObject'){}, essa sintaxe permite, inclusive, cascatearmos varios blocos using para encapsularmos e manejarmos os arquivos dentro do mesmo contexto e escopo.
+    </p>
+<h2>StreamWriter</h2>
+    <p>Assim como ocorre com o StrearReader, o StreamWriter é uma classe que permite escrevermos sobre objetos Stream, dessa forma podemos enviar caracteres diretamente para o arquivo binário aberto e, consequentemente, escrever os nossos dados de modo direto. Sua aplicação segue a mesma lógica do StreamReader, ou seja, precisamos instanciar um StreamObject para atribuí-lo, então, ao StreamWriter.</p>
+<h2>Directory & DirectoryInfo</h2>
+    <p>Assim como podemos abrir arquivos, também podemos acessar pastas (diretórios) através do código, para isso usamos as classes Directory e DirectoryInfo. Essas classes tem funcionamento semelhante ao File e FileInfo, onde uma permite o acesso apenas aos módulos estáticos, não reqeurendo que instaciemos um objeto do tipo diretório, mas que, por conta disso, são mais lentas em relação ao DirectoryInfo que instancia um objeto.</p>
+    <p>A utilização se dá passando o caminho do diretório através de uma string (ou usando o método com o @) e, a partir dele, podemos acessar, ler ou criar novos diretórios com o nosso programa. Isso é essencial em casos onde estamos desenvolvendo uma aplicação local, ou seja, instalada na máquina do usuário, ou quando temos um serviço web que, em determinadas situações, precisa criar novas pastas dentro do servidor para armazenar alguma informação.</p>
+    <h3>Criando Pastas</h3>
+        <p>Assim como nas classes File, aqui também podemos criar e excluir pastas em algum diretório, para isso temos os métodos Create e Delete, que irão criar ou excluir uma pstas nomeada <br/><b>Importante: Caso a pasta não exista o método Delete irá retornar uma exception, já o CReate, caso já exista uma pasta com o mesmo nome, ele irá sobreescrevê-la.</b></p>
+    <h3>EnumerateFiles</h3>
+        <p>Um método que também faz parte da classe directory é o EnumerateFiles, este método irá listar todos os arquivos contidos em uma pasta a partir de um parâmetro pattern.</p>
+    <h3>searchPattern</h3>
+        <p>O parâmetro searchPattern é muito comum na leitura de diretórios pois ele se destina a reconhecer quais arquivos e folders serão considerados na enumeração, ou seja, por ele podemos passar uma string que será usada para validar se um arquivo ou folder será considerado ou não. Por padrão ele busca apenas os diretórios caso o pattern seja uma string vazia, mas a depender do valor incluso podemos exibir todo o conteúdo (".", "*.*") ou estabelecer quais arquivos (por nome ou extensão) serão considerados na nossa leitura.</p>
+<h2>Path</h2>
+    <p></p>
