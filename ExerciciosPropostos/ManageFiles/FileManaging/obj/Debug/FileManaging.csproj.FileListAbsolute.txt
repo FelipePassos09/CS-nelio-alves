@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\ManageFiles\FileManaging\bin\Debug\FileManaging.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\ManageFiles\FileManaging\bin\Debug\FileManaging.pdb
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\ManageFiles\FileManaging\obj\Debug\FileManaging.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\ManageFiles\FileManaging\obj\Debug\FileManaging.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\ManageFiles\FileManaging\obj\Debug\FileManaging.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\ManageFiles\FileManaging\obj\Debug\FileManaging.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\ManageFiles\FileManaging\obj\Debug\FileManaging.pdb
