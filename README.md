@@ -996,4 +996,66 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
     <h3>searchPattern</h3>
         <p>O parâmetro searchPattern é muito comum na leitura de diretórios pois ele se destina a reconhecer quais arquivos e folders serão considerados na enumeração, ou seja, por ele podemos passar uma string que será usada para validar se um arquivo ou folder será considerado ou não. Por padrão ele busca apenas os diretórios caso o pattern seja uma string vazia, mas a depender do valor incluso podemos exibir todo o conteúdo (".", "*.*") ou estabelecer quais arquivos (por nome ou extensão) serão considerados na nossa leitura.</p>
 <h2>Path</h2>
-    <p></p>
+    <p>Consiste em uma classe que traduz e interpreta strings como caminhos de diretório. A classe path possui apenas membros estáticos e pode ser usada tanto para recuperar informações do computador quanto para criar caminhos específicos para o programa.</p>
+<h2>Interfaces</h2>
+    <p>
+        Interface é um tipo que define um conjunto de operações que uma classe ou struct deve implementar.<br/>Por convenção, as interfaces são sempre declaradas começando por 'I', de modo à distinguí-las dos demais componentes do programa.
+        <br/><br/>
+        Em resumo, uma ionterface estabelece um contrato, ou seja, um conjunto de caracteríticas que as classes são obrigadas a seguir. O uso de interfaces permite criarmos sistemas com baixo acoplamento e flexíveis.
+    </p>
+    <p>
+        Para usarmos uma interface precisamos, incialmente criá-la do mesmo modo que uma classe, porém usando a palavra interface ao invés de class. Dentro do corpo da interface criamos os métodos que serão aplicados a partir dela e, por fim, atribuimos ela dentro do programa ou classe que irá utilizá-la, sem, no entanto, atribuir um valor, apenas deixando-a como um atributo.
+        <br />
+        Ainda na construção da interface, precisamos associar as classes que realizaram essa interface, para isso estendemos essas classes do mesmo modo que em uma herança e nos certificamos que todos os métodos da classe correspondem aos métodos criados na interface.
+    </p>
+    <p>
+        Em outras palavras, uma interface representa uma classe genérica, ou um atalho, para outra classe. Isso é importante pois, não precisamos alterar nada nos componentes que utilizam as classes da interface, apenas estes componentes. Caso haja a mudança de um deles apenas precisamos alterá-lo, de acordo com a interface, e atribuí-lo como extensão da interface em referência, ou seja, mesmo que mudemos a classe, o restante dos componentes não precisará ser refatorado.
+    </p>
+<h2>Inversão de Controle e Injeção de Dependência</h2>
+    <p>
+        Injeção de dependência diz do caso onde informamos durante a instanciação de um objeto, outro objeto do qual ele depende, ou seja, em tempo de execução, a ser instanciado o objeto pretendido, também será instanciado o objeto associado. Já a inversão de controle representa o cenário onde um componente ou serviço não é gerenciado por si só, e sim por outros locais no código (assim como no exemplo acima). Podemos gerar a inversão de controle de várias maneiras, mas essa é a principal.
+    </p>
+<h3>Herança vs Contrato</h3>
+    <p>
+        Os conceitos entre herança e contrato são bastante similares em relação às definições, ambas possuem os elementos principais genericos e elementos especializados vinculados assim como ambas possuem características polimórficas, ou seja, a partir do objeto genérico podemos aplicar comportamentos disntintos a depender da especialização necessária. Porém, há uma diferença crucial quanto à ambas pois, a partir de uma herança, atributos da classe genérica são propagados para as classes especializadas porém na interface (contrato) não há atributos a serem propagados, ela apenas aplica uma camada de generalização para flexibilizar a aplicação de um determinado recurso em virtude da sua especialização.
+    </p>
+<h2>IComparable</h2>
+    <p>
+        É uma interface padronizada para se realizar a comparação entre dois objetos. Ela se destina a casos onde precisamos realizar a ordenação de listas e vetores contendo objetos dado que, sem essa implementação, o CSharp não consegue estabelecer os parâmetros para a ordenação.
+        <br />
+        Sua implementação é simples, quando pretendemos aplicar a ordenação apenas precisamos estender a classe do objeto pretendido para IComparable e implementar a nossa lógica de comparação no método CompareTo.
+    </p>
+<h2>Generics</h2>
+    <p>
+        O uso de generics se destina a podermos reutilizar códigos mesmo com tipos de dados diferentes, ou seja, a mesma classe pode aceitar valores de tipos diferentes a partir de uma definição na chamada dessa classe.
+        <br />
+        Para declararmos uma classe genérica precisamos, após darmos o nome da classe, nomeramos um tipo genérico entre <> após o nome da classe: class Exemplo<"TipoGenérico">. Ao fazermos o casting dessa classe podemos, então, passar o tipo pretendido. Isso é bastante útil tanto para garantirmos segurança e evitarmos problemas na execução do código quanto para ganharmos performance nas operações.
+        <br/>
+        As generics foram criadas para evitar o uso de object como tipo genérico pois isso gera problemas diversos, desde incompatibilidade de tipos até problemas de performance nas operações.
+    </p>
+    <h3>Restrições para Generics</h3>
+        <p>
+            Para aplicarmos uma restrição à uma classe, método ou interface precisamos aplicar a palavra reservada where e estender a implementação do nosso tipo genérico para um tipo que contenha as restrições ou permissões do valor pretendido.
+                <br /><br />
+            Algumas restrições possíveis:
+            <ul>
+                <li>where Type : struct
+                    <ul><li>Estendendo o tipo para structs</li></ul>
+                </li>
+                <li>where Type : class
+                    <ul><li>Estendendo o tipo para uma classes apenas.</li></ul>
+                </li>
+                <li>where Type : unmanaged
+                    <ul><li>Consiste em um grupo de tipos predefinidos que pode conter apenas valore não nulos e não ponteiros.</li></ul>
+                </li>
+                <li>where Type : new()
+                    <ul><li>Apenas novos objetos são permitidos.</li></ul>
+                </li>
+                <li>where Type : <'base type name'>
+                    <ul><li>Um tipo básico específico.</li></ul>
+                </li>
+                <li>where Type : U
+                    <ul><li>Outro tipo genérico.</li></ul>
+                </li>
+            </ul>
+        </p>

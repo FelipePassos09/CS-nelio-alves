@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Interfaces\ExemploInterfaces\bin\Debug\ExemploInterfaces.exe
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Interfaces\ExemploInterfaces\bin\Debug\ExemploInterfaces.pdb
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Interfaces\ExemploInterfaces\obj\Debug\ExemploInterfaces.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Interfaces\ExemploInterfaces\obj\Debug\ExemploInterfaces.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Interfaces\ExemploInterfaces\obj\Debug\ExemploInterfaces.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Interfaces\ExemploInterfaces\obj\Debug\ExemploInterfaces.exe
+S:\Courses\CS-nelio-alves\PersonalizedExceptions\Interfaces\ExemploInterfaces\obj\Debug\ExemploInterfaces.pdb
