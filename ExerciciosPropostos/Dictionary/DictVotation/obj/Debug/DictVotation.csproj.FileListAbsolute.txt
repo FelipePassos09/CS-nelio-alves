@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Dictionary\DictVotation\bin\Debug\DictVotation.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Dictionary\DictVotation\bin\Debug\DictVotation.pdb
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Dictionary\DictVotation\obj\Debug\DictVotation.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Dictionary\DictVotation\obj\Debug\DictVotation.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Dictionary\DictVotation\obj\Debug\DictVotation.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Dictionary\DictVotation\obj\Debug\DictVotation.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Dictionary\DictVotation\obj\Debug\DictVotation.pdb

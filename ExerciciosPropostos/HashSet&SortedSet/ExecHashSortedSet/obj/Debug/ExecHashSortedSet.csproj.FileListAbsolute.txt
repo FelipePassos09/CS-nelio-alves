@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ExecHashSortedSet\bin\Debug\ExecHashSortedSet.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ExecHashSortedSet\bin\Debug\ExecHashSortedSet.pdb
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ExecHashSortedSet\obj\Debug\ExecHashSortedSet.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ExecHashSortedSet\obj\Debug\ExecHashSortedSet.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ExecHashSortedSet\obj\Debug\ExecHashSortedSet.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ExecHashSortedSet\obj\Debug\ExecHashSortedSet.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ExecHashSortedSet\obj\Debug\ExecHashSortedSet.pdb

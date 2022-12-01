@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\GetHashCode&Equals\ExerciseEquals\bin\Debug\ExerciseEquals.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\GetHashCode&Equals\ExerciseEquals\bin\Debug\ExerciseEquals.pdb
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\GetHashCode&Equals\ExerciseEquals\obj\Debug\ExerciseEquals.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\GetHashCode&Equals\ExerciseEquals\obj\Debug\ExerciseEquals.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\GetHashCode&Equals\ExerciseEquals\obj\Debug\ExerciseEquals.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\GetHashCode&Equals\ExerciseEquals\obj\Debug\ExerciseEquals.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\GetHashCode&Equals\ExerciseEquals\obj\Debug\ExerciseEquals.pdb
