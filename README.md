@@ -1046,10 +1046,10 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
                     <ul><li>Estendendo o tipo para uma classes apenas.</li></ul>
                 </li>
                 <li>where Type : unmanaged
-                    <ul><li>Consiste em um grupo de tipos predefinidos que pode conter apenas valore não nulos e não ponteiros.</li></ul>
+                    <ul><li>Consiste em um grupo de tipos predefinidos que pode conter apenas valores não nulos e não ponteiros.</li></ul>
                 </li>
                 <li>where Type : new()
-                    <ul><li>Apenas novos objetos são permitidos.</li></ul>
+                    <ul><li>Apenas novos objetos contendo um construtor</li></ul>
                 </li>
                 <li>where Type : <'base type name'>
                     <ul><li>Um tipo básico específico.</li></ul>
@@ -1059,3 +1059,130 @@ Modificadores de acesso consistem de configurações nos métodos e atributos pa
                 </li>
             </ul>
         </p>
+<h2>GetHashCode & Equals</h2>
+    <p>São operações nativas da classe object que, de modo genérico, se destinam a comparar dois objetos. Todos os tipos predefinidos já possuem essas operações.
+        <h3>Equals</h3>
+            <p>A operação equals possui uma performance inferior quando comparada à operação GetHashCode, porém seu retorno positivo sempre será 100% preciso, ou seja, estará livre de erros ou coicidências.</p>
+        <h3>GetHashCode</h3>
+            <p>Em contrapartida, a operação GetHashCode possui uma maior perfomance em relação ao Equals, porém pode conter erros nos resultados positivos decorrentes de coincidências ou falhas de comparação, neste caso carregando um certo grau de incerteza.</p>
+            <p>No caso do GetHashCode ele irá inferir um valor para o objeto referenciado, este valor, no entanto, pode variar entre cada execução do projeto. O que gera alguma incerteza é o fato de, por ser feito a partir de um valor gerado aleatóriamente, poder haver um falso positivo devido o build ter inferido um valor duplicado. Neste caso é válido uma revalidação dos casos positivos para confirmar se há, de fato, a igualdade, neste caso usando o Equals.</p>
+    </p>
+<h2>HashSet<'t'> e SortedSet<'T'></h2>
+    <p>
+        Representam conjuntos de elementos, neste caso, cada conjunto não possui/permite repetições além de os seus elementos não possuirem uma posição, de modo que a inserção, acesso e remoção aos elementos se torna mais rápida, além disso, permitem também a interseção, unição e diferença entre estes conjuntos, facilitando processos de análise de conjuntos.
+    </p>
+    <h3>HashSet</h3>
+        <p>Associa os valores à uma tabela hash, de modo que sua distribuição se torna aleatória e, em virtude disto, possui processos de busca, inserção e remoção de ordem 1. Dado isso a ordenação dos valores não é garantida.</p>
+    <h3>SortedSet</h3>
+        <p>Armazena os valores em uma estrutura de árvore primária. Dado isso, as operações de busca, inserção e remoção são de ordem log(n). Neste caso, como os valores são inseridos em estrutura de árvore podem permitir a ordenação durnate o armazenamento conforme a implementação do IComparer<'T'></p>
+<h2>Testes de Igualdade em Estruturas Hash</h2>
+    <p>Há duas formas principais de ser feita essa comparação, a primeira, caso haja a implementação do GetHashCode e do Equals ela fará a comparação entre o Hashcode do valor e validará, dentro da coleção, se este existe, então aplicará um Equals para confirmar. De modo geral ela irá comparar os hash codes de todos os valores para testar a igualdade.</p>
+    <p>
+        Já se não houver a implementação destes métodos na classe da coleção, ele irá comparar as referências dos objetos quando tipo for referência, ou comparará os valores quando o tipo for valor. 
+    </p>
+<h2>Dictionary & SortedDictionary</h2>
+    <p>Compreende uma coleção de pares Chave/Valor (Key/Value) a qual não admite a repetição de objetos do tipo chave bem como são indexados a partir de suas chaves, não possuindo, assim, uma posição fixa. Além disso, coleções do tipo Dictionary são mais performaticas para acessar, inserir e remover valores visto não necessitarem percorrer a coleção para encontrar o valor requisitado.</p>
+    <p>
+        Uso comum: cookies, local storage e quaisquer modelos chave-valor.
+        <br/>
+        As coleções do tipo Dictionary existem em várias linguagens e tecnologias como JSON (uma estrutra integralmente constituída em dicionário), Python, JavaScript entre outras.
+        <br />
+        <b>As estruturas chave-valor também podem ser chamadas de mappings.</b>
+    </p>
+    <h3>Estrutura de um Dictionary</h3>
+        <p>
+            Um Dictionary possui a estrutura básica Tipo< tipoChave, tipoValor >, ou seja, Dictionary< Tkey, Tvalue >, em seguida nomeamos o objeto e iniciamos um novo objeto Chave-Valor. Além disso, o tipo referido à cada chave-valor é KeyValuePair< Tkey, Tvalue>. Essa estrutura é importante pois necessitamos passar o tipo de cada item caso queiramos evitar o uso de var nas chamadas que utilizam os objetos contidos em cada dicionário.
+        </p>
+        <p>
+            Como pode ser visto, um dictinary é similar aos Set's, porém no caso dele há uma instanciação de objetos dentro da sua coleção, onde cada valor reprensenta um objeto KeyValuePair.
+        </p>
+        <p>
+            <h4>Métodos dos Dictionary</h4>
+                <ul>
+                    <li>dictionary[key] - é uma maneira de invocar um atributo do dictionary a partir de sua chave. <b>Caso passemos uma key não existente atribuindo um valor esta será criada na coleção.</b></li>
+                    <li>Add(key,value) - Permite adicionar uma chave-valor na coleção.</li>
+                    <li>Clear() - esvazia a coleção.</li>
+                    <li>Count - Retorna um int com a contagem de items da coleção.</li>
+                    <li>ContainsKey(key) - retorna um boolean a partir da chave passada, se existir ou não.</li>
+                    <li>ContainsValue(value) - retorna um boolean a partir do valor passado, se existir ou não.</li>
+                    <li>Remove(key) - remove um elemento a partir da chave. Retorna exception se não há a chave passada.</li>
+                </ul>
+        </p>
+<h2>Extension Methods</h2>
+    <p>
+        Os extension methods, ou extensões, são métodos auxiliares que podem ser cirados para uma determinada classe. Sua implementação é simples e sua principal característica é que são, sempre, métodos estáticos.
+    </p>
+    <p>
+        Para criarmos uma extension basta escrevêla como um método estatico e, entre os parâmetros, inserir a 'this < tipo > nome do parâmetro' e, então, inserir os parâmetros que serã abordados. O parâmetro iniciado por <i>this</i> indica que o método sempre se aplicarà para o tipo apontado, sendo que somente será aplicado se o tipo do objeto for igual ao tipo this.
+    </p>
+    <p>
+        Para facilitar a utilizadação podemos, inclusive, inserir o método dentro do namespace system (ou qualquer outro pretendido), mas é importante mantermos as boas práticas de criar as extensões dentro de um diretório dedicado, para isolá-los dos demais componentes do programa e facilitar a localização.
+    </p>
+<h2>Lambda, Delegates e LINQ</h2>
+    <h3>Funções Lambda</h3>
+        <p>
+            As funçõs lambda, também conhecidas como funções anônimas, são funções que não são atribuídas por método e sim por uma variável, ou seja, não possuem a declaração padrão de função conhecida.
+        </p>
+        <p>
+            Para declararmos uma função lambda, primeiramente criamos uma variável com o tipo que pretendemos sair da nossa função (exceto quando void) a atribuímos como valor uma função ou cálculo com a seguinte sintaxe: p (atributo) => (representa o começo da função) p1 * p2 (p1 e p2 aqui são os valores que serão multiplicados, ou seja, os parâmetros). Podemos também usar lambda com análises lógicas, de modo que sua saída será um boolean. Por fim, podemo também usar das funções anônimas como parâmetros de algum método.
+        </p>
+        <p>
+            Há, no entanto, várias maneiras diferentes de declararmos funções lambda, onde podemos abrir e fechar chaves para indicar um return, executar algum outro método externo sobre o valor, etc...
+        </p>
+        <p>
+            As funções lambda são, no entanto, muito importantes para utilizarmos com os métodos derivados do Linq, além de permitirem maior encapsulamento de ações onde podemos instanciar menos métodos de uso pontual para implementá-los como lambda diretamento nos métodos principais.
+        </p>
+    <h3>Comparison< T ></h3>
+        <p></p>
+    <h3>Programação Funcional e Cálculo Lambda</h3>
+        <p>
+            Dentro da programação funcional costumamos trabalhar com um conjunto de padrões nos quais alteramos alguns comportamentos quanto à estruturação das nossas funções. Dito isso alguns pontos se destacam:
+            <ul>
+                <li>Descrição das Funções - Na progrmação funcional as funções são criadas com o intuito de fazerem algo, ou seja, são recuperadas e criadas com o intuito de 'o quê fazer'. Já na programação Imperativas as funcções são meios para algo ser feito, ou seja, 'como fazer'. Isso implica em menos código criado e maior agilidade e assertividade na implementação.</li>
+                <li>Transparência Referêncial - Diz dos elementos usados pelas funções não serem instanciados fora do escopo da função.</li>
+                <li>Objetos Imutáveis - permitem a paralelização de execução além de sere thread-safe, ou seja, não alteráveis por processos simultâneos.</li>
+                <li>Funções de Primeira Ordem - É uma característica que permite que as funções possam ser passadas como parâmetros de outros métodos.</li>
+                <li>Inferência de Tipos - Diz da característica em que os tipos das variáveis não precisam ser passados na função, deixando a tipagem a cargo do compilador.</li>
+            </ul>
+        </p>
+    <h3>Funções Lambda</h3>
+        <p>
+            Dentro do cenário de programação funcional, uma expressão lambda representa uma função anônima de primeira classe (ou Primeira Ordem).
+        </p>
+<h3>Delegates</h3>
+    <p>
+        Representa um tipo referência, com type safety, para um ou mais métodos.
+    </p>
+    <p>Em linhas gerais, um delegate é aplicado para garantir associar e garantir que os métodos relacionados à ele estão de acordo com os tipos de entrada e saída esperados.</p>
+    <p>
+        Para declararmos um delegate basta iniciar a palavra reservada delegate, em seguida o tipo esperado (no caso para o retorno) e, entre parantesis, os parâmetros que são esperados para os métodos. O que isso significa? Se passarmos apenas um parâmetro int no nosso delegate, apenas os métodos que tenham a mesma saída esperada e apenas um parâmetro, serão atribuídos.
+    </p>
+    <p>
+        Assim, com o delegate, podemos atribuir uma função (método) para uma variável, aplicando de forma implicita os tipos relacionados no delegate. Além disso, o delegate é aplicado como um objeto, ou seja, ao ser atribuído como valor à uma variável, esta variável passa a se comportar como um objeto que executa a função.
+    </p>
+    <h4>Multicast Delegates</h4>
+        <p>
+            Com o delegate podemos também aplicar o multicast, ou seja, termos mais de um método atribuído ao mesmo objeto delegate sendo que todos os métodos atribuídos serão executados na ordem que foram adicionados no objeto. Para isso não faz sentido usá-lo com funções que retornam valor (a menos que seja preciso orquestrar uma série de cálculos sequenciais). Para adicionarmos um método ao objeto podemos usar o '+='.
+        </p>
+    <h3>Predicate</h3>
+        <p>
+            É um conjunto de métodos que recebe um objeto como parâmetro e retorna um boolean. Mas além disso, um predicate consiste de um método nativo que já implementa um delegate com retornos bool, e que pode receber tanto um outro método quanto uma função lambda, apenas precisamos nos certificar que nosso lambda retorna um bool como resultado.
+        </p>
+    <h3>Action</h3>
+        <p>
+            Segue a mesma linha do predicate, porém ela se destina à interações (geralmente com coleções) porém permite atribuirmos métodos que efetuem uma ação ou alteração nos valores / objetos aos quais foi aplicada. Esse delegate permite fazermos até 16 sobrecargas, de modo que cada sobrecarga representa a adição de um tipo ao seu conteúdo.
+        </p>
+    <h3>Func</h3>
+        <p>
+            É um delegate pertencente ao LINQ, o func age do mesmo módo que o Action, porém ele não se destina a alterar os valores e sim retornar um novo valor a partir do original. Uma aplicação comum de FUNC é com o .Select, de modo que, ao aplicarmos a função pretendida, retornamos uma nova lista a partir da transformação.
+        </p>
+<h2>LINQ</h2>
+    <p>
+        Consiste de um conjunto de tecnologias para consultas, baseada no C#. Basicamente o Linq reúne uma coleção de métodos e extensions para que possamos trabalhar com coleções de modo simplificado e direto.
+    </p>
+    <p>
+        Além disso, o Linq permite instanciar as consultas como objetos de primeira classe e possui suporte do compilador, o que ajuda no desenvolvimento das mesmas. Por último, os métodos do Linq permitem que as chamadas sejam feitas diretamente para as coleções, o que permite maior flexibilidade e menor quantidade de código.
+    </p>
+    <p>
+        <i>Além dos métodos normais, várias operações de consulta permitem que utilizemos também expressões lambda ou expressões com sintaxe similar às do SQL.</i>
+    </p>

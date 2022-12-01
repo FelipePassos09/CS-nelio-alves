@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ProposalExec2\Students\bin\Debug\Students.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ProposalExec2\Students\bin\Debug\Students.pdb
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ProposalExec2\Students\obj\Debug\Students.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ProposalExec2\Students\obj\Debug\Students.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ProposalExec2\Students\obj\Debug\Students.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ProposalExec2\Students\obj\Debug\Students.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\HashSet&SortedSet\ProposalExec2\Students\obj\Debug\Students.pdb

@@ -1,0 +1,7 @@
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Linq\Exec1\Exercise1Linq\bin\Debug\Exercise1Linq.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Linq\Exec1\Exercise1Linq\bin\Debug\Exercise1Linq.pdb
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Linq\Exec1\Exercise1Linq\obj\Debug\Exercise1Linq.csproj.AssemblyReference.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Linq\Exec1\Exercise1Linq\obj\Debug\Exercise1Linq.csproj.SuggestedBindingRedirects.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Linq\Exec1\Exercise1Linq\obj\Debug\Exercise1Linq.csproj.CoreCompileInputs.cache
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Linq\Exec1\Exercise1Linq\obj\Debug\Exercise1Linq.exe
+S:\Courses\CS-nelio-alves\ExerciciosPropostos\Linq\Exec1\Exercise1Linq\obj\Debug\Exercise1Linq.pdb
